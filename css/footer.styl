@@ -1,0 +1,31 @@
+footer
+    background-color: #7CC247
+    color: white
+    padding: 20px 0
+    text-align: center
+    a 
+        color: white
+        display: inline-block
+        font-weight: bold
+        font-size: em(12)
+        &:after 
+            content:"•";
+            width: 7px;
+            height: 7px;
+            color: #E3EFF9;
+            margin: 10px 10px;
+            font-size: em(12);
+        &:last-child:after{content: ""}
+        &:hover, &:active
+            opacity: 0.8
+            
+
+    p
+        margin: 10px 0;
+        &.made
+            font-size: em(14)
+            font-weight: bold
+        &.copyright
+            font-style: italic
+            
+                    
