@@ -1,29 +1,35 @@
 body 
-    background: #99D9EC
     font-family: "SFUIDisplay"
     color: #2C322D
     font-smoothing()
 
-h1, h2
-    font-family: "Montserrat"
-    text-align: center
-
 h1
-    em(18)
+    font-family: "Montserrat-Black"
+    text-align: center
+    font-size: em(18)
     color:#2D62A8
-    
+    margin: rem(10px) 0
+   
 h2
-    em(14)
-    
+    font-size: em(14)
+    text-align: center
+    margin: rem(7px) 0
+    font-weight: bold
+
 p 
-    em(12)
+    font-size: em(12)
+main
+    background: #99D9EC
+    overflow: auto
+    padding-bottom: rem(50px)
     
 .container
     width: 984px
     margin: 0 auto
      
 #content
-    padding: 20px
+    padding: rem(20)
+    margin: rem(10) 0
 
 #video
     width: 100%
@@ -35,6 +41,8 @@ i.heart
     width: 20px
     height: 20px
     display: inline-block
+    top: 6px
+    position: relative
     
 
 @media screen and (max-width: 1024px) 

@@ -19,17 +19,18 @@ function my_theme_options( $wp_customize ) {
         ) 
     ));
 
-    $wp_customize->add_setting('your_theme_activity_color');    
-    $wp_customize->add_control( new WP_Customize_Color_Control( 
+    $wp_customize->add_setting('your_theme_activity_id');    
+    $wp_customize->add_control( new WP_Customize_Control( 
         $wp_customize, 
-        'activity_color_control',
+        'activity_id_control',
         array(
-            'label'    => __( "Couleur de l'activité", 'mytheme' ), 
+            'label'    => "Id de l'activité (Nom en minuscule et sans accents)", 
             'section'  => 'title_tagline',
-            'settings' => 'your_theme_activity_color',
+            'settings' => 'your_theme_activity_id',
             'priority' => 10,
         ) 
     ));
+    $wp_customize->remove_control('site_icon');
 }
 add_action( 'customize_register' , 'my_theme_options' );
 

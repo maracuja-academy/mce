@@ -112,6 +112,15 @@ label {
   font-weight: normal;
   font-style: normal;
 }
+.bg_equitation {
+  background-color: #814e1f;
+}
+.bg_foot {
+  background-color: #7cc247;
+}
+header#header {
+  background: #99d9ec;
+}
 #logo {
   background: url("images/logo.png") no-repeat;
   width: 246px;
@@ -128,31 +137,44 @@ label {
   font-weight: bold;
   color: #fff;
   display: inline-block;
-  padding: 2px 20px;
+  padding: 0.125rem 1.25rem;
   font-size: 0.75em;
-  margin-top: 105px;
+  margin-top: 6.5625rem;
 }
 body {
-  background: #99d9ec;
   font-family: "SFUIDisplay";
   color: #2c322d;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
-h1,
-h2 {
-  font-family: "Montserrat";
-  text-align: center;
-}
 h1 {
+  font-family: "Montserrat-Black";
+  text-align: center;
+  font-size: 1.125em;
   color: #2d62a8;
+  margin: 0.625rem 0;
+}
+h2 {
+  font-size: 0.875em;
+  text-align: center;
+  margin: 0.4375rem 0;
+  font-weight: bold;
+}
+p {
+  font-size: 0.75em;
+}
+main {
+  background: #99d9ec;
+  overflow: auto;
+  padding-bottom: 3.125rem;
 }
 .container {
   width: 984px;
   margin: 0 auto;
 }
 #content {
-  padding: 20px;
+  padding: 1.25rem;
+  margin: 0.625rem 0;
 }
 #video {
   width: 100%;
@@ -163,6 +185,8 @@ i.heart {
   width: 20px;
   height: 20px;
   display: inline-block;
+  top: 6px;
+  position: relative;
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -182,9 +206,8 @@ i.heart {
   }
 }
 footer {
-  background-color: #7cc247;
   color: #fff;
-  padding: 20px 0;
+  padding: 1.25rem 0;
   text-align: center;
 }
 footer a {
@@ -198,7 +221,7 @@ footer a:after {
   width: 7px;
   height: 7px;
   color: #e3eff9;
-  margin: 10px 10px;
+  margin: 0.625rem;
   font-size: 0.75em;
 }
 footer a:last-child:after {
@@ -209,7 +232,8 @@ footer a:active {
   opacity: 0.8;
 }
 footer p {
-  margin: 10px 0;
+  margin: 0.625rem 0;
+  font-size: 0.875em;
 }
 footer p.made {
   font-size: 0.875em;

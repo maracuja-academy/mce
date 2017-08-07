@@ -1,4 +1,4 @@
-
+</main>
 <footer>
     <div class="container">
         <p class="made">Made with <i class="heart"></i> in Bordeaux</p>
