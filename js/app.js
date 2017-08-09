@@ -1,4 +1,4 @@
-var book = {
+var app = {
 	menuOpened: false,
 	scrollItems : [],
 	topMenuHeight : 0,
@@ -14,22 +14,22 @@ var book = {
 		    jQuery('html, body').animate({ scrollTop });
 		})
 
-		book.menuItems = jQuery("#menu nav a");
-		book.scrollItems = book.menuItems.map(function(){
+		app.menuItems = jQuery("#menu nav a");
+		app.scrollItems = app.menuItems.map(function(){
 			var item = jQuery(jQuery(this).attr("href"));
 			if (item.length) { return item; }
 		});
 		window.onscroll = function() {
-			var limit = jQuery(".book-logo").height() + 15
+			var limit = jQuery("#logo").height() + 15
 			if(window.pageYOffset > limit){
-				jQuery("#book").addClass("fixed");
+				jQuery("body").addClass("fixed");
 			}else if(window.pageYOffset < limit){
-				jQuery("#book").removeClass("fixed");
+				jQuery("body").removeClass("fixed");
 			}
 
-			var fromTop = jQuery(this).scrollTop()+book.topMenuHeight;
+			var fromTop = jQuery(this).scrollTop()+app.topMenuHeight;
 			// Get id of current scroll item
-			var cur = book.scrollItems.map(function(){
+			var cur = app.scrollItems.map(function(){
 			 if (jQuery(this).offset().top < fromTop)
 			   return this;
 			});
@@ -38,23 +38,27 @@ var book = {
 			cur = cur[cur.length-1];
 			var id = cur && cur.length ? cur[0].id : "";
 
-			if (book.lastId !== id) {
-			   book.lastId = id;
+			if (app.lastId !== id) {
+			   app.lastId = id;
 			   // Set/remove active class
-			   book.menuItems.removeClass("active");
-			   book.menuItems.filter("[href='#"+id+"']").addClass("active");
+			   app.menuItems.removeClass("active");
+			   app.menuItems.filter("[href='#"+id+"']").addClass("active");
 			} 
 
 		};
 	},
 
 	menuToggle: function(){
-		if(book.menuOpened){
-			jQuery("#book").removeClass("menu-opened");
-			book.menuOpened = false;
+		if(app.menuOpened){
+			jQuery("#menu").removeClass("menu-opened");
+			app.menuOpened = false;
 		}else{
-			jQuery("#book").addClass("menu-opened");
-			book.menuOpened = true
+			jQuery("#menu").addClass("menu-opened");
+			app.menuOpened = true
 		}
 	}
 }
+
+jQuery(document).ready(function(){
+	app.init()
+})

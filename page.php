@@ -1,6 +1,4 @@
-<!-- LANDING PAGE http://blog.viviansarazin.com/landing-page-checklist/ -->
-<?php
-get_header(); ?>
+<?php get_header(); ?>
 
 	
 
