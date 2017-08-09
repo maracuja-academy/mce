@@ -12,6 +12,6 @@
         <p class="copyright">© Maracuja 2017</p>
     </div>
 </footer>
-
+<?php wp_footer(); ?>
 </body>
 </html>

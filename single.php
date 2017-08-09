@@ -24,6 +24,12 @@ $post_type = get_post_type()
             echo '<h2>' . $exercice_type . '</h2>' ;
         }elseif ($post_type == "corriges") {
             echo '<h2>Corrigés</h2>' ;
+            if(function_exists('the_ratings')) { 
+                echo '<div class="rating">As-tu aimé cette séance ? ';
+                the_ratings(); 
+                echo '</div>';
+            } 
+
         }
         ?>
     </header>
@@ -32,11 +38,16 @@ $post_type = get_post_type()
 
     <div class="container">
         <div id="content">
-                    <?php the_content(); ?>
+            <?php the_content(); ?>
         </div>
         <?php if($youtube_id != "") { ?>
             <iframe id="video" src="https://www.youtube.com/embed/<?php echo $youtube_id ?>" frameborder="0" allowfullscreen></iframe>
-        <?php } ?>
+            <?php if(function_exists('the_ratings')) { 
+                echo '<div class="rating">As-tu aimé cette vidéo ? ';
+                the_ratings(); 
+                echo '</div>';
+            } 
+        } ?>
     </div>
 
 

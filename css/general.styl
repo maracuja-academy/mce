@@ -2,19 +2,27 @@ body
     font-family: "SFUIDisplay"
     color: #2C322D
     font-smoothing()
+    line-height: em(18)
+    font-size: 1.2em
 
 h1
     font-family: "Montserrat-Black"
     text-align: center
-    font-size: em(18)
+    font-size: em(20)
     color:#2D62A8
     margin: rem(10px) 0
    
 h2
-    font-size: em(14)
+    font-size: em(16)
     text-align: center
     margin: rem(7px) 0
     font-weight: bold
+h3
+    font-size: em(18)
+    font-family: "Montserrat-Black"
+    margin: rem(7px) 0
+    font-weight: bold
+    color: #2D62A8
 
 p 
     font-size: em(12)
@@ -22,14 +30,88 @@ main
     background: #99D9EC
     overflow: auto
     padding-bottom: rem(50px)
-    
+
+a
+    color: #2D62A8
+    &:hover, &:active, &:focus
+        opacity: 0.8
+
+
 .container
     width: 984px
     margin: 0 auto
      
+
+
+article
+    header
+        text-align: center
+    .rating
+        background-color: white
+        border-radius(30px)
+        padding: rem(5) rem(10)
+        display: inline
+        position: relative;
+        top: rem(10);
+        font-size: em(12)
+    .post-ratings
+        display: inline
 #content
     padding: rem(20)
     margin: rem(10) 0
+    
+    h4
+        margin: rem(15) 0 rem(10) 0;
+        strong
+            background-color: #477ABD
+            box-shadow(-2px 2px 0 #2D62A8!important)
+            border-radius(30px)
+            color: white
+            font-family: "Montserrat-Black";
+            display: inline;
+            padding: rem(5) rem(10);
+            margin-right: rem(5);
+            position: relative;
+            top: -4px;
+            
+    
+    blockquote
+        padding: 0 0 0 rem(10)
+        p
+            display: inline
+        &:before, &:after 
+            color: #2D62A8;
+            display: inline
+        &:before
+            content:'« ';
+        &:after 
+            content:' »';
+            text-align: right
+    table {
+        font-family: verdana,arial,sans-serif;
+        font-size:11px;
+        color:#333333;
+        border-width: 1px;
+        border-color: #666666;
+        border-collapse: collapse;
+    }
+    table th {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #dedede;
+    }
+    table td {
+        border-width: 1px;
+        padding: 8px;
+        border-style: solid;
+        border-color: #666666;
+        background-color: #ffffff;
+    }
+    img.size-full
+        width: 100%
+        height: inherit;
 
 #video
     width: 100%
