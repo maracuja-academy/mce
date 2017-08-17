@@ -2,7 +2,7 @@
 
 <?php 
 /**
- *Template Name: Landing Page
+ *Template Name: Landing Page Foot
  */
 
 get_header(); ?>

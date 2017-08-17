@@ -41,13 +41,15 @@ $post_type = get_post_type()
             <?php the_content(); ?>
         </div>
         <?php if($youtube_id != "") { ?>
-            <iframe id="video" src="https://www.youtube.com/embed/<?php echo $youtube_id ?>" frameborder="0" allowfullscreen></iframe>
+            <div id="video">
+            <iframe  width="853" height="480" src="https://www.youtube.com/embed/<?php echo $youtube_id ?>" frameborder="0" allowfullscreen></iframe>
             <?php if(function_exists('the_ratings')) { 
                 echo '<div class="rating">As-tu aimé cette vidéo ? ';
                 the_ratings(); 
                 echo '</div>';
-            } 
-        } ?>
+            } ?> 
+            </div>
+        <?php } ?>
     </div>
 
 
