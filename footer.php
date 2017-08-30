@@ -6,7 +6,7 @@
             <!-- <a href="/">Accueil</a> -->
             <a href="/mentions-legales">Mentions légales</a>
             <a href="https://www.facebook.com/moncahierdequitation/">Facebook</a>
-            <a href="mailto">Nous écrire</a>
+            <a href="mailto:contact@moncahier.fr">Nous écrire</a>
             <!-- <a href="/commande">Commander des cahiers</a> -->
         </nav>
         <p class="copyright">© Maracuja 2017</p>

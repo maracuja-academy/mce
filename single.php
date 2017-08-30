@@ -19,9 +19,9 @@ $post_type = get_post_type()
 
 <article>
     <header>
-    	<?php the_title( '<h1>', '</h1>' ); ?>
+    	<?php the_title( '<h2>', '</h2>' ); ?>
     	<?php if ($exercice_type) {
-            echo '<h2>' . $exercice_type . '</h2>' ;
+            echo '<h3>' . $exercice_type . '</h3>' ;
         }elseif ($post_type == "corriges") {
             echo '<h2>Corrigés</h2>' ;
             if(function_exists('the_ratings')) { 
@@ -42,7 +42,7 @@ $post_type = get_post_type()
         </div>
         <?php if($youtube_id != "") { ?>
             <div id="video">
-            <iframe  width="853" height="480" src="https://www.youtube.com/embed/<?php echo $youtube_id ?>" frameborder="0" allowfullscreen></iframe>
+            <iframe  width="853" height="480" src="https://www.youtube.com/embed/<?php echo $youtube_id ?>?autoplay=1" frameborder="0" allowfullscreen ></iframe>
             <?php if(function_exists('the_ratings')) { 
                 echo '<div class="rating">As-tu aimé cette vidéo ? ';
                 the_ratings(); 

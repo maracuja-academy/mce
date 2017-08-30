@@ -2,7 +2,7 @@
 
 <?php 
 /**
- *Template Name: Landing Page Foot
+ *Template Name: Page Foot Landing
  */
 
 get_header(); ?>
@@ -63,7 +63,7 @@ get_header(); ?>
     </div>
 </section>
 
-<section class="bg-red">
+<section class="bg-halo">
     <div class="container">
         <h2>Notre ambition : que ce cahier vous permette de fédérer votre
         communauté autour de valeurs éducatives et sportives.</h2>
@@ -83,7 +83,7 @@ get_header(); ?>
         <iframe style="margin: 0 auto;" src="//v.calameo.com/?bkcode=00517334145f71a2ff041&amp;mode=mini" width="1080" height="675" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
     </div>
 </section>
-<section class="bg-red">
+<section class="bg-halo">
     <h2>Conçu en collaboration
     avec des enseignants et des responsables techniques de clubs!</h2>
 </section>
@@ -151,7 +151,7 @@ get_header(); ?>
 	</div>
 </section>
 
-<section id="section-team" class="bg-red">
+<section id="section-team" class="bg-halo">
 	<div class="container">
 		<h2>Qui sommes-nous ?</h2>
 	</div>

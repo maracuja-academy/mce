@@ -19,8 +19,12 @@ var app = {
 			var item = jQuery(jQuery(this).attr("href"));
 			if (item.length) { return item; }
 		});
+
+
+	
 		window.onscroll = function() {
-			var limit = jQuery("#logo").height() + 15
+
+			var limit = jQuery("#logo").height()
 			if(window.pageYOffset > limit){
 				jQuery("body").addClass("fixed");
 			}else if(window.pageYOffset < limit){
@@ -57,6 +61,7 @@ var app = {
 			app.menuOpened = true
 		}
 	}
+
 }
 
 jQuery(document).ready(function(){

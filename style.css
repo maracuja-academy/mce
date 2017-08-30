@@ -108,6 +108,12 @@ label {
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'Montserrat';
+  src: url("fonts/Montserrat-Bold.eot?#iefix") format('embedded-opentype'), url("fonts/Montserrat-Bold.otf") format('opentype'), url("fonts/Montserrat-Bold.woff") format('woff'), url("fonts/Montserrat-Bold.ttf") format('truetype'), url("fonts/Montserrat-Bold.svg#Montserrat-Bold") format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
 body {
   font-family: "SFUIDisplay";
   color: #2c322d;
@@ -121,28 +127,28 @@ h1 {
   text-align: center;
   font-size: 1.25em;
   color: #2d62a8;
-  margin: 0.625rem 0;
+  margin: 0.625rem 0.625rem;
 }
 h2 {
   font-size: 1em;
   text-align: center;
-  margin: 0.4375rem 0;
+  margin: 0.4375rem 0.625rem;
   font-weight: bold;
 }
 h3 {
   font-size: 1.125em;
   font-family: "Montserrat-Black";
-  margin: 0.4375rem 0;
+  margin: 0.4375rem 0.625rem;
   font-weight: bold;
   color: #2d62a8;
 }
 p {
   font-size: 0.75em;
+  line-height: 1.5em;
 }
 main {
   background: #99d9ec;
   overflow: auto;
-  padding-bottom: 3.125rem;
 }
 a {
   color: #2d62a8;
@@ -151,6 +157,13 @@ a:hover,
 a:active,
 a:focus {
   opacity: 0.8;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+article {
+  margin: 1.875rem 0;
 }
 article header {
   text-align: center;
@@ -255,6 +268,13 @@ i.heart {
   display: inline-block;
   top: 6px;
   position: relative;
+}
+.vertical-container {
+  display: table;
+}
+.vertical-container .box {
+  display: table-cell;
+  vertical-align: middle;
 }
 @media screen and (max-width: 1024px) {
   .container {
@@ -403,11 +423,70 @@ body {
     width: 60rem;
   }
 }
-.bg_equitation {
+.style-equitation {
   background-color: #814e1f;
 }
-.bg_foot {
+.style-equitation #header #logo p {
+  background-color: #814e1f;
+}
+.style-equitation .bg-grass {
+  background-image: url("images/bg-grass-equit2.jpg");
+}
+.style-equitation .bg-halo {
+  background-image: url("images/bg-blue.jpg");
+  background-color: #153e68;
+}
+.style-equitation section.bg-white h2 {
+  color: #2d62a8;
+}
+.style-equitation section.bg-white h3 {
+  color: #cd2027;
+}
+.style-foot {
   background-color: #7cc247;
+}
+.style-foot #header #logo p {
+  background-color: #7cc247;
+}
+.style-foot .bg-grass {
+  background-image: url("images/bg-grass-foot.jpg");
+}
+.style-foot .bg-halo {
+  background-image: url("images/bg-red.jpg");
+  background-color: #e1372f;
+}
+.style-foot section.bg-white h2,
+.style-foot section.bg-white h3 {
+  color: #cd2027;
+}
+.nf-form-cont {
+  margin: 1.875rem auto 0 auto;
+  max-width: 25rem;
+}
+.nf-form-cont .nf-form-fields-required {
+  display: none;
+}
+.nf-form-cont input,
+.nf-form-cont textarea {
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0.9375rem 1.25rem;
+  border: 0;
+  font-size: 0.875em;
+}
+nf-field {
+  text-align: left;
+}
+.nf-error-msg {
+  background-color: #cd2027;
+  color: #fff !important;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0.625rem;
 }
 header#header {
   background: #99d9ec;
@@ -432,32 +511,44 @@ header#header {
   font-size: 0.75em;
   margin-top: 6.5625rem;
 }
-body.page-template-landing {
-  font-size: 1.2em;
-  line-height: 1.25em;
+body.page-template-dancewithhim #section-header h2 {
+  text-align: left;
 }
-body.page-template-landing header#header {
+body.page-template-dancewithhim #section-header .box {
+  text-align: left;
+}
+body.page-template-dancewithhim #section-header .box .nf-form-cont {
+  margin: 0;
+}
+body.page-template-equit-landing header#header,
+body.page-template-dancewithhim header#header {
   background-color: #fff;
 }
-body.page-template-landing main {
+body.page-template-equit-landing main,
+body.page-template-dancewithhim main {
   background: #fff;
 }
-body.page-template-landing h2 {
+h2 {
   font-family: "Montserrat-Black";
   font-size: 1.625em;
   line-height: 1.25em;
 }
-body.page-template-landing p {
+h3 {
+  font-family: "Montserrat";
+  margin-top: 0.9375rem;
+}
+p {
   margin: 0.625em;
   font-size: 1em;
 }
 #menu nav {
+  position: absolute;
   background: #fff;
   width: 1024px;
   margin: 0 auto;
   background: #fff;
   text-align: center;
-  top: 0;
+  top: 149px;
   width: 100%;
   overflow: hidden;
   height: 45px;
@@ -465,24 +556,15 @@ body.page-template-landing p {
   z-index: 10;
   border-bottom: 1px solid #f9f9f9;
 }
-.fixed #menu nav {
-  position: fixed;
-}
-.fixed #content {
-  margin-top: 50px;
-}
-.menu-opened nav {
-  position: relative;
-}
 #menu nav a {
   color: #2d62a8;
-  font-size: 0.8em;
+  font-size: 1.125em;
   font-family: "Montserrat";
   line-height: 35px;
   display: inline-block;
   cursor: pointer;
 }
-#menu a:after {
+#menu nav a:after {
   content: "•";
   width: 7px;
   height: 7px;
@@ -493,13 +575,31 @@ body.page-template-landing p {
 #menu nav a:last-child:after {
   content: "";
 }
-#menu a:hover,
-#menu a.active,
-#menu a:focus {
+#menu nav a:hover,
+#menu nav a.active,
+#menu nav a:focus {
   color: #7cc247;
 }
+#menu a.button {
+  position: absolute;
+  z-index: 11;
+  top: 0.3125rem;
+  right: 0.3125rem;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.fixed #menu a.button {
+  position: fixed;
+}
+.fixed #menu nav {
+  position: fixed;
+  top: 0;
+}
+.fixed #content {
+  margin-top: 50px;
+}
 section {
-  padding: 4.375rem 1.25rem 3.125rem 1.25rem;
+  padding: 4.375rem 1.25rem 4.375rem 1.25rem;
   text-align: center;
 }
 section:after {
@@ -510,29 +610,21 @@ section:after {
   clear: both;
   height: 0;
 }
-section {
-  display: inline-block;
-}
-* html section {
-  height: 1%;
-}
-section {
-  display: block;
-}
 .entry-content {
   margin-top: 0;
 }
-section .button,
+.button,
 input[type=button] {
+  -webkit-appearance: none;
+  line-height: 1.5625rem;
   color: #fff;
   display: inline-block;
   text-align: center;
-  line-height: 40px;
   margin: 0 auto;
   font-family: montserrat;
   font-weight: bold;
   text-align: center;
-  padding: 5px 45px;
+  padding: 0.4375rem 2.8125rem 0.3125rem 2.8125rem;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
@@ -543,28 +635,14 @@ input[type=button] {
   background-color: #e1372f !important;
   border: 0;
 }
-section .button:hover,
-section .button:focus,
+.button:hover,
+.button:focus,
 .nf-form-layout input[type=button]:hover,
 .nf-form-layout input[type=submit]:focus {
   background-color: #cd2027;
   border: 0;
   font-weight: bold;
   color: #fff;
-}
-span.wpcf7-not-valid-tip {
-  color: #fd9da1;
-}
-div.nf-after-field .nf-error-msg {
-  border: 2px solid #cd2027;
-  background-color: #e1372f;
-}
-div.wpcf7-mail-sent-ok {
-  border: 2px solid #29b24b;
-  background-color: #7cc247;
-}
-div.wpcf7-response-output {
-  margin: 30px 0;
 }
 section.separator {
   background-image: url("images/separator.png");
@@ -576,20 +654,15 @@ section.bg-white {
   background-color: #fff;
   color: #2c322d;
 }
-section.bg-white h2,
-section.bg-white h3 {
-  color: #cd2027;
-}
 section.bg-white em {
   font-size: 0.7em;
 line-height
 }
-section.bg-grass {
-  background-image: url("images/bg-grass.jpg");
+.bg-grass {
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #7cc247;
-  background-position: 50% 50%;
+  background-position: center bottom;
   color: #fff;
 }
 section.bg-grass a {
@@ -599,20 +672,46 @@ section.bg-grass h3 {
   color: #fff;
   text-align: center;
 }
-section.bg-red {
-  background-image: url("images/bg-red.jpg");
+section.bg-halo {
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #e1372f;
   background-position: 50% 50%;
   color: #fff;
 }
-.wpcf7 {
-  max-width: 400px;
-  margin: 0 auto !important;
+#section-book {
+  background-image: url("images/bg-grass-equit.jpg");
 }
-.wpcf7 textarea {
-  height: 120px;
+#section-book h2 {
+  margin-bottom: 20px;
+}
+#section-book .button {
+  margin: 15px 0 0px 0;
+}
+#section-book .vertical-container {
+  height: 386px;
+}
+#section-preview iframe {
+  margin: 20px auto 20px auto;
+  max-width: 100%;
+  max-height: 100vh;
+}
+#section-pricing {
+  background: #f3f3f3;
+}
+#section-pricing h3 {
+  margin: 10px 0;
+}
+#section-pricing i {
+  color: #cd2027;
+}
+#section-pricing .asterisque {
+  font-size: 0.75em;
+}
+#section-team p {
+  font-size: 0.875em;
+}
+#section-mission {
+  text-align: left;
 }
 #section-social {
   text-align: center;
@@ -628,19 +727,11 @@ section.bg-red {
 #section-team p {
   font-size: 14px;
 }
-#section-axes .col-1-2 {
-  height: 240px;
-}
 #section-axes .img-container {
   height: 100px;
 }
 #section-mission {
   text-align: left;
-}
-#section-preview iframe,
-#section-video iframe {
-  max-width: 100%;
-  max-height: 100vh;
 }
 a.contact-email {
   background-image: url("images/email-icon.png");
@@ -667,17 +758,13 @@ a.contact-tw {
 .twitter-share-button {
   margin-left: 10px;
 }
-.vertical-container {
-  display: table;
-  height: 403px;
-}
-.vertical-container .box {
-  display: table-cell;
-  vertical-align: middle;
-}
 @media only screen and (max-width: 45em) {
   #menu {
     background: transparent;
+  }
+  #menu a.button {
+    margin-top: 10.625rem;
+    margin-right: 34%;
   }
   #menu nav a {
     display: block;
@@ -711,13 +798,53 @@ a.contact-tw {
   }
   #menu.menu-opened nav {
     height: inherit;
-    padding: 10px;
-    position: fixed;
     z-index: 1;
+    padding: 0.625rem 0;
+    position: absolute;
+  }
+  #menu.menu-opened a:after {
+    content: "";
   }
   #menu.menu-opened .hamburger {
     background-image: url("images/menu-close.png");
   }
+  .fixed #menu a.button {
+    top: 0.625rem;
+    right: 0.625rem;
+    margin-top: 0;
+    margin-right: 0;
+    position: fixed;
+  }
+  .fixed #menu.menu-opened nav {
+    padding: 2.8125rem 0 0.625rem 0;
+    position: fixed;
+  }
+}
+body.page-template-equit-command header#header {
+  background-color: #fff;
+}
+body.page-template-equit-command header {
+  text-align: center;
+  padding: 0.625rem 0;
+}
+body.page-template-equit-command .vertical-container {
+  height: 240px;
+}
+#section-commande {
+  background: #99d9ec;
+}
+#section-commande p {
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+#section-commande .listradio-wrap li {
+  float: left;
+  margin: 0 0.625rem 0 0 !important;
+}
+#section-commande .nf-response-msg {
+  color: #29b24b;
 }
 footer {
   color: #fff;

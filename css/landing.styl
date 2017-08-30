@@ -1,64 +1,93 @@
-body.page-template-landing
-    font-size: 1.2em
+/* landing.styl */
+
+
+
+body.page-template-dancewithhim
+    #section-header 
+        h2
+            text-align: left
+        .box
+            text-align: left
+            .nf-form-cont
+                margin: 0
+body
+    &.page-template-equit-landing, &.page-template-dancewithhim
+        header#header
+            background-color: white
+        main 
+            background: white
+h2
+    font-family: "Montserrat-Black"
+    font-size: em(26)
     line-height: em(20)
+h3
+    font-family: "Montserrat"
+    margin-top: rem(15)
 
-    header#header
-        background-color: white
-    main 
-        background: white
-    h2
-        font-family: "Montserrat-Black"
-        font-size: em(26)
-        line-height: em(20)
-
-    p
-        margin: em(10);
-        font-size: em(16)
+p
+    margin: em(10);
+    font-size: em(16)
 
         
 
+#menu 
+    
+    nav 
+        position: absolute
+        background: white
+        width: 1024px
+        margin: 0 auto
+        background: white
+        text-align: center
+        top: 149px
+        width: 100%
+        overflow: hidden
+        height: 45px
+        padding-top: 4px
+        z-index: 10
+        border-bottom: 1px solid #F9F9F9
+        a
+            color: #2D62A8;
+            font-size: em(18);
+            font-family: "Montserrat";
+            line-height: 35px;
+            display: inline-block;
+            cursor: pointer;
 
-#menu nav 
-    background: white
-    width: 1024px
-    margin: 0 auto
-    background: white
-    text-align: center
-    top: 0
-    width: 100%
-    overflow: hidden
-    height: 45px
-    padding-top: 4px
-    z-index: 10
-    border-bottom: 1px solid #F9F9F9
+            &:after 
+                content:"•";
+                width: 7px;
+                height: 7px;
+                color: #E3EFF9;
+                margin: 10px 10px;
+                font-size: 1.3em;
 
+            &:last-child:after
+                content: ""
+            &:hover, &.active, &:focus
+                color:#7CC247;
+    a.button
+        position: absolute
+        z-index: 11
+        top: rem(5)
+        right: rem(5)
+        padding-left : 5px
+        padding-right : 5px
 
-.fixed #menu nav{position: fixed;}
-.fixed #content{margin-top: 50px;}
-.menu-opened nav{position: relative; }
-#menu nav a{
-    color: #2D62A8;
-    font-size: 0.8em;
-    font-family: "Montserrat";
-    line-height: 35px;
-    display: inline-block;
-    cursor: pointer;
-}
+.fixed 
+    #menu 
+        a.button
+            position: fixed
+        nav
+            position: fixed
+            top : 0
+    #content
+        margin-top: 50px
 
-#menu a:after {
-    content:"•";
-    width: 7px;
-    height: 7px;
-    color: #E3EFF9;
-    margin: 10px 10px;
-    font-size: 1.3em;
-}
-#menu nav a:last-child:after{content: ""}
-#menu a:hover, #menu a.active, #menu a:focus{color:#7CC247;}
 
 
 section{
-    padding: rem(70) rem(20) rem(50) rem(20);
+    padding: rem(70) rem(20) rem(70) rem(20);
     text-align: center;
 }
 
@@ -70,52 +99,35 @@ section:after {
   clear: both;
   height: 0;
 }
-section { display: inline-block; }
-/* start commented backslash hack \*/
-* html section { height: 1%; }
-section { display: block; }
-/* close commented backslash hack */
+
+
 
 .entry-content{
     margin-top: 0;
 }
-section .button, input[type=button]{
+.button, input[type=button]{
+    -webkit-appearance: none;
+    line-height: rem(25)
     color: white;
     display: inline-block;
     text-align: center;
-    line-height: 40px;
     margin: 0 auto;
     font-family: montserrat;
     font-weight: bold;
     text-align: center;
-    padding: 5px 45px;
+    padding: rem(7) rem(45) rem(5) rem(45);
     border-radius: 10px;
     box-shadow: -4px 4px 0 #CD2027!important;
     background-color: #E1372F!important;
     border:0;
 }
-section .button:hover, section .button:focus,.nf-form-layout input[type=button]:hover,.nf-form-layout input[type=submit]:focus{
+ .button:hover, .button:focus,.nf-form-layout input[type=button]:hover,.nf-form-layout input[type=submit]:focus{
     background-color: #CD2027;
     border:0;
     font-weight: bold
     color:white
 }
 
-span.wpcf7-not-valid-tip {
-    color: #FD9DA1
-}
-div.nf-after-field .nf-error-msg {
-    border:2px solid #CD2027;
-    background-color:#E1372F;
-}
-
-div.wpcf7-mail-sent-ok{
-    border:2px solid #29B24B;
-    background-color:#7CC247;
-}
-div.wpcf7-response-output{
-       margin: 30px 0;
-}
 section.separator{
     background-image: url(images/separator.png);
     background-size: 100% 22px;
@@ -125,39 +137,59 @@ section.separator{
 
 section.bg-white{
     background-color: white;
-    color:#2C322D;
+    color:black_text;
 }
-section.bg-white h2, section.bg-white h3{
-    color:#CD2027;
-}
+
 section.bg-white em{font-size: 0.7em; line-height: }
 
-section.bg-grass{
-    background-image: url(images/bg-grass.jpg);
+.bg-grass{
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #7CC247;
-    background-position: 50% 50%;
+    background-position: center bottom;
     color:white;
-}
-section.bg-grass a{color:white;}
-section.bg-grass h3{color:white; text-align: center;}
-section.bg-red{
-    background-image: url(images/bg-red.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #E1372F;
-    background-position: 50% 50%;
-    color:white;
-}
-.wpcf7 {
-    max-width: 400px;
-    margin: 0 auto!important;
-  } 
-.wpcf7 textarea{
-    height: 120px;
 }
 
+section.bg-grass a{color:white;}
+section.bg-grass h3{color:white; text-align: center;}
+section.bg-halo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    color:white;
+}
+
+/******** SECTIONS ***********/
+
+#section-book 
+    background-image: url(images/bg-grass-equit.jpg)
+
+    h2
+        margin-bottom : 20px
+    .button 
+        margin: 15px 0 0px 0;
+    .vertical-container
+            height: 386px;
+
+#section-preview
+    iframe
+        margin: 20px auto 20px auto
+        max-width: 100%
+        max-height: 100vh
+#section-pricing
+    background: #f3f3f3
+    h3
+        margin: 10px 0
+    i 
+        color: red
+    .asterisque
+        font-size: em(12)
+#section-team
+    p
+        font-size: em(14)
+#section-mission
+    text-align: left
+    
 
 #section-social{
     text-align: center;
@@ -173,9 +205,7 @@ section.bg-red{
 #section-team p {
     font-size: 14px;
 }
-#section-axes .col-1-2{
-    height: 240px
-}
+
 #section-axes .img-container{
     height: 100px
 }
@@ -183,10 +213,7 @@ section.bg-red{
     text-align: left
 }
 
-#section-preview iframe, #section-video iframe {
-        max-width: 100%
-        max-height: 100vh
-    }
+
 a.contact-email{background-image: url(images/email-icon.png);}
 a.contact-fb{background-image: url(images/fb-icon.png);}
 a.contact-tw{background-image: url(images/tw-icon.png);}
@@ -206,20 +233,13 @@ a.contact-tw{background-image: url(images/tw-icon.png);}
 
 }
 
-.vertical-container{
-    display: table;
-    height: 403px;
-}
-.vertical-container .box{
-    display: table-cell;
-    vertical-align: middle;
-}
-
 
 @media only screen and (max-width: 45em) 
-
     #menu
-        background:transparent;
+        background:transparent
+        a.button
+            margin-top: rem(170)
+            margin-right: 34%
         nav a
             display: block; 
         nav
@@ -243,17 +263,25 @@ a.contact-tw{background-image: url(images/tw-icon.png);}
             width: 40px
             height: 40px
     
-        &.menu-opened nav
-            height: inherit
-            padding: 10px
-            position: fixed
-            z-index: 1
-        &.menu-opened .hamburger
-            background-image: url(images/menu-close.png);
-    
-
-@media only screen and (max-width: 20em) {  /* 320px */
-
-
-}
+        &.menu-opened 
+            nav
+                height: inherit
+                z-index: 1
+                padding: rem(10) 0
+                position: absolute
+            a:after
+                content: ""
+            .hamburger
+                background-image: url(images/menu-close.png);
+    .fixed
+        #menu
+            a.button
+                top: rem(10)
+                right: rem(10)
+                margin-top: 0
+                margin-right: 0
+                position: fixed
+            &.menu-opened nav
+                padding: rem(45) 0 rem(10) 0
+                position: fixed
 

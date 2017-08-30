@@ -1,3 +1,5 @@
+/* general.styl */
+
 body 
     font-family: "SFUIDisplay"
     color: #2C322D
@@ -10,26 +12,27 @@ h1
     text-align: center
     font-size: em(20)
     color:#2D62A8
-    margin: rem(10px) 0
+    margin: rem(10) rem(10)
    
 h2
     font-size: em(16)
     text-align: center
-    margin: rem(7px) 0
+    margin: rem(7) rem(10)
     font-weight: bold
 h3
     font-size: em(18)
     font-family: "Montserrat-Black"
-    margin: rem(7px) 0
+    margin: rem(7) rem(10)
     font-weight: bold
     color: #2D62A8
 
 p 
     font-size: em(12)
+    line-height: em(24)
 main
-    background: #99D9EC
+    background: blue_sky
     overflow: auto
-    padding-bottom: rem(50px)
+    // padding-bottom: rem(50px)
 
 a
     color: #2D62A8
@@ -37,9 +40,12 @@ a
         opacity: 0.8
 
 
-
+img
+    max-width: 100%;
+    height: auto;
 
 article
+    margin: rem(30) 0
     header
         text-align: center
     .rating
@@ -128,6 +134,14 @@ i.heart
     top: 6px
     position: relative
     
+.vertical-container
+    display: table
+
+.vertical-container .box
+    display: table-cell
+    vertical-align: middle
+
+
 
 @media screen and (max-width: 1024px) 
     .container
