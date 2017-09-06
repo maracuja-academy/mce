@@ -2,6 +2,11 @@
 
 header#header
     background: #99D9EC
+    .fb-container
+        float: right
+        font-size: em(12)
+        text-align: center
+        margin-top: rem(35)
 #logo
     background: url('images/logo.png') no-repeat
     width: 246px
@@ -17,3 +22,8 @@ header#header
         padding: rem(2) rem(20)
         font-size: em(12)
         margin-top: rem(105)
+
+@media screen and (max-width: 768px) 
+    header#header
+        .fb-container
+         display: none

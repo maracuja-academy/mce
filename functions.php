@@ -35,7 +35,7 @@ function my_theme_options( $wp_customize ) {
 add_action( 'customize_register' , 'my_theme_options' );
 
 function mce_scripts(){
-    wp_enqueue_style( 'style', get_stylesheet_uri() ); 
+    wp_enqueue_style( 'style', get_stylesheet_uri().'?2' ); 
     wp_enqueue_script( 'app', get_template_directory_uri() . '/js/app.js', array ( 'jquery' ), 1.0, true);
 }
 add_action( 'wp_enqueue_scripts', 'mce_scripts' );

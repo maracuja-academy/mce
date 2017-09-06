@@ -5,6 +5,9 @@ var app = {
 	lastId : false,
 	menuItems : [],
 	init : function(){
+		
+	
+
 		jQuery('a[href^="#"]').on('click', function(e) {
 		    e.preventDefault();
 
@@ -66,4 +69,5 @@ var app = {
 
 jQuery(document).ready(function(){
 	app.init()
+
 })

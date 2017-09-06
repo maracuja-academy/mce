@@ -22,7 +22,7 @@ get_header(); ?>
         <a href="#section-book">Le cahier</a>
         <a href="#section-preview">Feuilletez un extrait</a>
         <a href="#section-pricing">Tarif</a>
-        <a href="#section-who">Qui sommes nous ?</a>
+        <a href="#section-who">Qui sommes-nous ?</a>
 
     </nav>
 
@@ -35,13 +35,12 @@ get_header(); ?>
     <div class="container">
         <div class="row">
         <div class="col-6">
-            <img src="<?php asset('book-cover-equit.png') ?>" alt="" width="276" height="382" class="alignnone size-full wp-image-564" />
+            <img src="<?php asset('book-cover-equit-automne.png') ?>" alt="" width="350" height="410" />
         </div>
         <div class="col-6 vertical-container">
             <div class="box">
-                <h2>Le premier cahier de vacances<br>personnalisé par<br>votre centre équestre !</h2>
+                <h2>Le premier cahier d'entrainement personnalisé par votre centre équestre !</h2>
                 <p>Grâce à leur passion de l’équitation et du club, engagez vos jeunes cavaliers dans des révisions sportives et scolaires en prenant du plaisir !</p>
-                <a href="#section-contact" class="button">Personnalisez votre cahier!</a>
             </div>
         </div>
         </div>
@@ -55,21 +54,61 @@ get_header(); ?>
     </div>
 </section>
 
+<section id="section-personalise" class="bg-white">
+    <div class="container">
+        
+        <h2>Un cahier, à votre image, pour faire progresser<br>vos jeunes cavaliers en prenant du plaisir.</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="<?php asset('equit-picto-unique.png')?>">
+                <h3>Un cahier unique</h3>
+                <p>✓ Logo de votre centre équestre sur la page de couverture</p>
+                <p>✓ Intégration d’une vidéo dictée du moniteur de vos jeunes cavaliers</p>
+            </div>
+            <div class="col-4">
+                <img src="<?php asset('equit-picto-hippologie.png')?>">
+                <h3>Hippologie</h3>
+                <p>Le pansage, l’anatomie du cheval, les couleurs de robes du poney. Une rubrique pour en découvrir toujours plus sur le monde équestre.</p>
+            </div>
+            <div class="col-4">
+                <img src="<?php asset('equit-picto-read.png')?>">
+                <h3>Révisions scolaires</h3>
+                <p>En s’appuyant sur des textes équestres, vos jeunes cavaliers révisent de façon ludique et efficace.</p>
+            </div>
+
+        </div>
+        <p><a class="button" href="/commande">Commander</a></p>
+
+</section>
+<section class="bg-halo">
+    <div class="container">
+        <h2>Retrouvez, avant chaque vacances scolaires, une nouvelle édition de « Mon cahier d’entrainement »</h2>
+    </div>
+</section>
+<section class="bg-white separator">
+    <div class="container">
+        <h2>Présentation du cahier par Mathilde Trinchero, <br>monitrice d'équitation et youtubeuse équestre ! </h2>
+        <div id="video">
+            <iframe width="853" height="480" src="https://www.youtube.com/embed/z-iR6FjGcZw" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</section>
 <section id="section-preview" class="bg-white">
     <div class="container">
         <h2>Feuilletez un extrait :</h2>
-        <!-- <iframe style="margin: 0 auto;" src="//v.calameo.com/?bkcode=00517334145f71a2ff041&amp;mode=mini" width="1080" height="675" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe> -->
         
-        <iframe src="//v.calameo.com/?bkcode=0051733419284511fa3c2&mode=mini" width="1080" height="675" frameborder="0" scrolling="no" allowtransparency allowfullscreen ></iframe>
+        <iframe src="//v.calameo.com/?bkcode=0051733419284511fa3c2&mode=mini&disablemousewheel=true" width="1080" height="675" frameborder="0" scrolling="no" allowtransparency allowfullscreen ></iframe>
 
-        <h3>Jusqu’au 10 Septembre, recevez cet extrait dans votre centre équestre !</h3>
-        <a class="button" href="#section-contact">Comment recevoir ce cahier ?</a>
+        <h3>Contactez-nous vite pour mettre en place l'édition Automne pour les vacances de Toussaint !</h3>
+        <a class="button" href="/commande">Commander</a>
     </div>
 </section>
+
 
 <section class="bg-halo">
     <h2>Conçu en collaboration<br>avec des enseignants et des moniteurs d’équitation !</h2>
 </section>
+
 
 <section id="section-pricing" class="bg-white">
     <div class="container">
@@ -96,6 +135,9 @@ get_header(); ?>
         </div>
     </div>
 </section>
+
+
+
 <section id="section-contact" class="bg-grass"> 
 <div class="container">
     <h2>Vous êtes intéressé ?</h2>
@@ -107,26 +149,10 @@ get_header(); ?>
 </div> 
 </section>
 
-<section id="section-content" class="bg-white">
-    <div class="container">
-        
-        <h2>Un cahier, à votre image, pour faire progresser<br>vos jeunes cavaliers en prenant du plaisir.</h2>
-        <div class="row">
-            <div class="col-6">
-                <img src="<?php asset('equit-picto-hippologie.png')?>">
-                <h3>Hippologie</h3>
-                <p>Le pansage, l’anatomie du cheval, les couleurs de robes du poney. Une rubrique pour en découvrir toujours plus sur le monde équestre.</p>
-            </div>
-            <div class="col-6">
-                <img src="<?php asset('equit-picto-read.png')?>">
-                <h3>Révisions scolaires</h3>
-                <p>En s’appuyant sur des textes équestres, vos jeunes cavaliers révisent de façon ludique et efficace.</p>
-            </div>
-        </div>
-</section>
+
 
 <section class="bg-halo" id="section-who">
-    <h2>Qui sommes nous ?</h2>
+    <h2>Qui sommes-nous ?</h2>
 </section>
 
 <section id="section-team" class="bg-white">

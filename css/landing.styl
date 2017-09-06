@@ -1,15 +1,23 @@
 /* landing.styl */
 
-
-
 body.page-template-dancewithhim
     #section-header 
         h2
             text-align: left
-        .box
+        .container
             text-align: left
             .nf-form-cont
                 margin: 0
+        .nf-response-msg
+            font-weight: bold
+            a 
+                text-decoration: underline
+        .vertical-container
+            height: 430px;
+            
+body.page-template-equit-landing
+    .fb-container
+        display: none
 body
     &.page-template-equit-landing, &.page-template-dancewithhim
         header#header
@@ -163,13 +171,14 @@ section.bg-halo{
 
 #section-book 
     background-image: url(images/bg-grass-equit.jpg)
-
+    margin-top: 30px
+    padding: 80px 0 40px 0
     h2
         margin-bottom : 20px
     .button 
         margin: 15px 0 0px 0;
     .vertical-container
-            height: 386px;
+            height: 375px;
 
 #section-preview
     iframe

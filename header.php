@@ -31,9 +31,9 @@
     </title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
-    
+
     <meta property="og:url" content="<?php echo get_permalink() ?>" />
-    <meta property="og:type" content="article" />
+    <meta property="og:type" content="product" />
     <meta property="og:title" content="Le premier cahier de révisions personnalisé par votre centre équestre !" />
     <meta property="og:description" content="Mon cahier d’entrainement est l’outil éducatif pour votre centre équestre.
     Grâce à leur passion de l’équitation et du club, engagez vos jeunes cavaliers dans des révisions sportives et scolaires en prenant du plaisir ! " />
@@ -51,12 +51,29 @@
 </head>
 <body <?php body_class('style-'.$act_id ); ?> >
 
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId=1681824845170669";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
 <header id="header">
+    <div class="container">
+        <div class="fb-container">
+            <p>Suivez notre actualité :</p>
+            <div class="fb-like" data-href="https://www.facebook.com/moncahierequitation/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+        </div>
+    </div>
 	<a href="/" id="logo">
 		<p>
 			<?php echo get_theme_mod('your_theme_activity'); ?>
 		</p>
 	</a>
+
 </header>
 
 

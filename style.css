@@ -491,6 +491,12 @@ nf-field {
 header#header {
   background: #99d9ec;
 }
+header#header .fb-container {
+  float: right;
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: 2.1875rem;
+}
 #logo {
   background: url("images/logo.png") no-repeat;
   width: 246px;
@@ -511,14 +517,31 @@ header#header {
   font-size: 0.75em;
   margin-top: 6.5625rem;
 }
+@media screen and (max-width: 768px) {
+  header#header .fb-container {
+    display: none;
+  }
+}
 body.page-template-dancewithhim #section-header h2 {
   text-align: left;
 }
-body.page-template-dancewithhim #section-header .box {
+body.page-template-dancewithhim #section-header .container {
   text-align: left;
 }
-body.page-template-dancewithhim #section-header .box .nf-form-cont {
+body.page-template-dancewithhim #section-header .container .nf-form-cont {
   margin: 0;
+}
+body.page-template-dancewithhim #section-header .nf-response-msg {
+  font-weight: bold;
+}
+body.page-template-dancewithhim #section-header .nf-response-msg a {
+  text-decoration: underline;
+}
+body.page-template-dancewithhim #section-header .vertical-container {
+  height: 430px;
+}
+body.page-template-equit-landing .fb-container {
+  display: none;
 }
 body.page-template-equit-landing header#header,
 body.page-template-dancewithhim header#header {
@@ -680,6 +703,8 @@ section.bg-halo {
 }
 #section-book {
   background-image: url("images/bg-grass-equit.jpg");
+  margin-top: 30px;
+  padding: 80px 0 40px 0;
 }
 #section-book h2 {
   margin-bottom: 20px;
@@ -688,7 +713,7 @@ section.bg-halo {
   margin: 15px 0 0px 0;
 }
 #section-book .vertical-container {
-  height: 386px;
+  height: 375px;
 }
 #section-preview iframe {
   margin: 20px auto 20px auto;
@@ -845,6 +870,23 @@ body.page-template-equit-command .vertical-container {
 }
 #section-commande .nf-response-msg {
   color: #29b24b;
+}
+body.error404 header#header {
+  background-color: #fff;
+}
+body.error404 main {
+  background-color: #7cc247;
+  text-align: center;
+  padding: 2.5rem 0;
+}
+body.error404 h2 {
+  color: #fff;
+}
+body.error404 .container {
+  text-align: center;
+}
+body.error404 .button {
+  margin: 1.875rem 0;
 }
 footer {
   color: #fff;
