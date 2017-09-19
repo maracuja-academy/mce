@@ -1,35 +1,16 @@
-<!-- LANDING PAGE http://blog.viviansarazin.com/landing-page-checklist/ -->
 
 <?php 
 /**
  *Template Name: Page Foot Landing
  */
 
+function asset($name){
+    echo get_template_directory_uri().'/images/'.$name;
+}
+
+
 get_header(); ?>
-<script>window.twttr = (function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0],
-    t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
 
-  t._e = [];
-  t.ready = function(f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs"));</script>
-    <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId=1207890805895643";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
 
 <div id="menu" >
     <div class="book-logo"></div>
@@ -39,7 +20,6 @@ get_header(); ?>
         <a href="#section-preview">Feuilletez un extrait</a>
         <a href="#section-pricing">Tarif</a>
         <a href="#section-team">Qui sommes nous ?</a>
-        <a href="#section-social">Communiquez avec nous</a>
     </nav>
 </div>
 
@@ -50,13 +30,14 @@ get_header(); ?>
     <div class="container">
         <div class="row">
     	<div class="col-6">
-            <img src="http://www.footdefrancais.fr/wp-content/uploads/2017/07/EffetLivre.png" alt="" width="286" height="406" class="alignnone size-full wp-image-564" />
+            <img src="<?php asset('foot/book-cover.png') ?>" alt="" width="350" height="410" />
         </div>
     	<div class="col-6 vertical-container">
     		<div class="box">
-            	<h2>Le premier cahier d'entraînement personnalisé par le club !</h2>
-            	<p> Grâce à leur passion du football et du club, engagez vos jeunes joueurs dans des révisions sportives, scolaires et ludiques cet été !</p>
-            	<a href="#section-contact" class="button">Personnalisez le vôtre !</a>
+            	<h2>Le premier cahier 
+d’entrainement sportif et scolaire  personnalisé par le club !</h2>
+            	<p> Grâce à leur passion du football et du club, engagez vos jeunes joueurs dans des révisions sportives, scolaires et ludiques cette année !</p>
+            	<a href="/commande" class="button">Commander</a>
             </div>
     	</div>
         </div>
@@ -69,36 +50,52 @@ get_header(); ?>
         communauté autour de valeurs éducatives et sportives.</h2>
     </div>
 </section>
-
 <section id="section-video" class="bg-white separator">
     <div class="container ">
-        <h2>Découvrez :</h2>
-        <iframe src="https://www.youtube.com/embed/8-sr8xKZRK0" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        <h2>Présentation du cahier avec Jaroslav Plašil</h2>
+        <div id="video">
+            <iframe src="https://www.youtube.com/embed/7FLeLqxlgVk" width="853" height="480" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+        </div>
     </div>
 </section>
 
+
+<section class="bg-halo">
+    <h2>Conçu en collaboration <br>
+    avec des enseignants et des responsables techniques de clubs!</h2>
+</section>
 <section id="section-preview" class="bg-white">
     <div class="container">
         <h2>Feuilletez un extrait :</h2>
-        <iframe style="margin: 0 auto;" src="//v.calameo.com/?bkcode=00517334145f71a2ff041&amp;mode=mini" width="1080" height="675" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
+        <iframe style="margin: 0 auto;" src="//v.calameo.com/?bkcode=005173341d9c5a3b1323b&amp;mode=mini&disablemousewheel=true&bgcolor=FFFFFF" width="1080" height="675" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe>
     </div>
 </section>
 <section class="bg-halo">
-    <h2>Conçu en collaboration
-    avec des enseignants et des responsables techniques de clubs!</h2>
+    <h2>Retrouvez à chaque vacances scolaires  <br>
+    une nouvelle édition de Mon cahier d’entrainement !</h2>
 </section>
 <section id="section-pricing" class="bg-white ">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                
+            </div>
+            <div class="col-6">
+
+            </div>
+        </div>
+    </div>
     <h2>Le prix juste !</h2>
-    <h2>5 € / cahier *</h2>
+    <h2>2,5 € / cahier *</h2>
     <img src="http://www.footdefrancais.fr/wp-content/uploads/2017/07/livre-open.png" alt="" width="300" height="273" class="alignnone size-full wp-image-566" />
 
     <p>Un projet clé en main :<br>
-    Edition du cahier (format A5 - 64 pages)<br>
-    Intégrations de vos données (vidéos, textes, logo,...)<br>
+    Edition du cahier (format A5 - 36 pages)<br>
     Livraison dans votre club
     </p>
-    <em>* 5€ TTC à partir de 50 cahiers par club
-    6,5€ TTC en dessous de 50 cahiers par club</em>
+    <em>* 2,5€ TTC à partir de 50 cahiers par club
+    3,5€ TTC en dessous de 50 cahiers par club
+    +1€ pour la personnalisation </em>
 
     &nbsp;
 
@@ -198,34 +195,14 @@ Nous avons créé un cahier de vacances "nouvelle génération" ou le programme 
 	</div>
 </section>
 
-<section id="section-social" class="bg-white separator">
-	<div class="container">
-		<h2>Communiquez avec nous !</h2>
-        <div class="row">
-    		<div class="col-4">
-    			<a href="mailto:contact@footdefrancais.fr" class="contact-email" target="_blank"></a>
-    			<p>Email</p>
 
-    		</div>
-    		<div class="col-4">	
-    			<a href="https://www.facebook.com/footdefrancais/" class="contact-fb" target="_blank"></a>
-    			<p>Facebook</p>
-    		</div>
-    		<div class="col-4">	
-    			<a href="https://twitter.com/footdef" class="contact-tw" target="_blank"></a>
-    			<p>Twitter</p>
-    		</div>
-        </div>
-	</div>
-</section>
 
-<section class="social clearfix bg-white">
-    <div class="container">
-        <div class="fb-like" data-href="https://www.facebook.com/footdefrancais/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-        <a class="twitter-share-button"
-          href="https://twitter.com/intent/tweet?text=Le premier cahier de révisions scolaires et sportives cahier.footdefrancais.fr"
-          >Tweet</a>
-
-    </div>
-</section>
 <?php get_footer(); ?>
+
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    app.landing()
+
+})
+</script>

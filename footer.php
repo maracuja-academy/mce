@@ -10,7 +10,7 @@
             <a href="http://maracuja.academy/rejoignez-nous/" target="_blank">🔎 Stagiaire en design</a>
         </nav>
         <p class="copyright">© Maracuja 2017</p>
-        <div class="fb-like" data-href="https://www.facebook.com/moncahierequitation/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+        <div class="fb-like" data-href="https://www.facebook.com/<?php echo get_theme_mod('fb_page_id'); ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 
     </div>
 </footer>

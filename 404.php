@@ -10,10 +10,10 @@ get_header(); ?>
 
 <div class="container">
 
-    <h2>Bah ! Cette page n’existe pas !</h2>
+    <h2>Cette page n’existe pas !</h2>
     <a href="/" class="button">Aller à l'accueil</a>
 
-    <p><img src="<?php asset('equit-404.png')?>"></p>
+    <p><img src="<?php asset('foot/404.png')?>"></p>
     
 
 </div>

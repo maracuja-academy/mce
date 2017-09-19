@@ -20,8 +20,6 @@ body.page-template-equit-landing
         display: none
 body
     &.page-template-equit-landing, &.page-template-dancewithhim
-        header#header
-            background-color: white
         main 
             background: white
 h2
@@ -33,13 +31,10 @@ h3
     margin-top: rem(15)
 
 p
-    margin: em(10);
+    margin: em(10) 0;
     font-size: em(16)
-
         
-
 #menu 
-    
     nav 
         position: absolute
         background: white
@@ -95,7 +90,7 @@ p
 
 
 section{
-    padding: rem(70) rem(20) rem(70) rem(20);
+    padding: rem(50) rem(20) rem(50) rem(20);
     text-align: center;
 }
 
@@ -150,13 +145,13 @@ section.bg-white{
 
 section.bg-white em{font-size: 0.7em; line-height: }
 
-.bg-grass{
+.bg-grass
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #7CC247;
     background-position: center bottom;
     color:white;
-}
+
 
 section.bg-grass a{color:white;}
 section.bg-grass h3{color:white; text-align: center;}
@@ -167,10 +162,15 @@ section.bg-halo{
     color:white;
 }
 
+section.bg-blue
+    h2
+        color:blue
+    #content 
+        text-align: left
+    
 /******** SECTIONS ***********/
 
 #section-book 
-    background-image: url(images/bg-grass-equit.jpg)
     margin-top: 30px
     padding: 80px 0 40px 0
     h2

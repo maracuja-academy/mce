@@ -34,19 +34,18 @@
 
     <meta property="og:url" content="<?php echo get_permalink() ?>" />
     <meta property="og:type" content="product" />
-    <meta property="og:title" content="Le premier cahier de révisions personnalisé par votre centre équestre !" />
-    <meta property="og:description" content="Mon cahier d’entrainement est l’outil éducatif pour votre centre équestre.
-    Grâce à leur passion de l’équitation et du club, engagez vos jeunes cavaliers dans des révisions sportives et scolaires en prenant du plaisir ! " />
-    <meta property="og:image" content="https://s3.eu-central-1.amazonaws.com/moncahier/mon-cahier-d-equitation.png" />
-    <meta property="fb:app_id" content="1681824845170669">
+    <meta property="og:title" content="<?php echo get_theme_mod('opengraph_title'); ?>" />
+    <meta property="og:description" content="<?php echo get_theme_mod('opengraph_description'); ?>" />
+    <meta property="og:image" content="<?php echo get_theme_mod('opengraph_image'); ?>" />
+    <meta property="fb:app_id" content="<?php echo get_theme_mod('fb_app_id'); ?>">
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <link rel="icon" type="image/png" href="<?php echo $asset_dir.$act_id.'-16.png' ?>" sizes="16x16">  
-    <link rel="icon" type="image/png" href="<?php echo $asset_dir.$act_id.'-32.png' ?>" sizes="32x32">  
-    <link rel="icon" type="image/png" href="<?php echo $asset_dir.$act_id.'-96.png' ?>" sizes="96x96">  
-    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $asset_dir.$act_id.'-180.png' ?>">  
-    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $asset_dir.$act_id.'-152.png' ?>">  
-    <link rel="apple-touch-icon" sizes="167x167" href="<?php echo $asset_dir.$act_id.'-167.png' ?>">  
+    <link rel="icon" type="image/png" href="<?php echo $asset_dir.$act_id.'/16.png' ?>" sizes="16x16">  
+    <link rel="icon" type="image/png" href="<?php echo $asset_dir.$act_id.'/32.png' ?>" sizes="32x32">  
+    <link rel="icon" type="image/png" href="<?php echo $asset_dir.$act_id.'/96.png' ?>" sizes="96x96">  
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo $asset_dir.$act_id.'/180.png' ?>">  
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $asset_dir.$act_id.'/152.png' ?>">  
+    <link rel="apple-touch-icon" sizes="167x167" href="<?php echo $asset_dir.$act_id.'/167.png' ?>">  
     <?php wp_head();?>
 </head>
 <body <?php body_class('style-'.$act_id ); ?> >
@@ -56,7 +55,7 @@
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId=1681824845170669";
+  js.src = "//connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v2.9&appId=<?php echo get_theme_mod('fb_app_id'); ?>";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -65,7 +64,7 @@
     <div class="container">
         <div class="fb-container">
             <p>Suivez notre actualité :</p>
-            <div class="fb-like" data-href="https://www.facebook.com/moncahierequitation/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+            <div class="fb-like" data-href="https://www.facebook.com/<?php echo get_theme_mod('fb_page_id'); ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
         </div>
     </div>
 	<a href="/" id="logo">

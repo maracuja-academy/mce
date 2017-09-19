@@ -4,7 +4,7 @@ var app = {
 	topMenuHeight : 0,
 	lastId : false,
 	menuItems : [],
-	init : function(){
+	landing : function(){
 		
 	
 
@@ -23,7 +23,7 @@ var app = {
 			if (item.length) { return item; }
 		});
 
-
+		//app.clubSelector()
 	
 		window.onscroll = function() {
 
@@ -54,6 +54,31 @@ var app = {
 
 		};
 	},
+//https://github.com/devbridge/jQuery-Autocomplete
+	// clubSelector : function() {
+	// 	var clubs = [ 
+	// 	  {value: "Afghanistan", data: "AF"}, 
+	// 	  {value: "Aland Islands", data: "AX"}, 
+	// 	  {value: "Albania", data: "AL"}, 
+	// 	  {value: "Algeria", data: "DZ"}, 
+	// 	  {value: "American Samoa", data: "AS"}
+	// 	]
+
+	// 	jQuery('#autocomplete').autocomplete({
+	// 	    lookup: clubs,
+	// 	    onSelect: function (suggestion) {
+	// 	    	console.log(jQuery("input#nf-field-22").val())
+	// 	    	jQuery("#nf-field-22").val(suggestion.data);
+	// 	        console.log(suggestion.data);
+	// 	        console.log(jQuery("input#nf-field-22").val())
+	// 	    }
+	// 	});
+	// 	// setTimeout(function() {
+	// 	// 	jQuery("#nf-field-22").val("hey");
+	// 	// 			console.log(jQuery("input#nf-field-22").val())
+
+	// 	// }, 2000);
+	// },
 
 	menuToggle: function(){
 		if(app.menuOpened){
@@ -67,7 +92,3 @@ var app = {
 
 }
 
-jQuery(document).ready(function(){
-	app.init()
-
-})

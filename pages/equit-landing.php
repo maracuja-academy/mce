@@ -35,7 +35,7 @@ get_header(); ?>
     <div class="container">
         <div class="row">
         <div class="col-6">
-            <img src="<?php asset('book-cover-equit-automne.png') ?>" alt="" width="350" height="410" />
+            <img src="<?php asset('book-cover-equit-autumn.png') ?>" alt="" width="350" height="410" />
         </div>
         <div class="col-6 vertical-container">
             <div class="box">
@@ -199,3 +199,10 @@ get_header(); ?>
     </div>
 </section>
 <?php get_footer(); ?>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    app.landing()
+
+})
+</script>

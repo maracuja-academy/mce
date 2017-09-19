@@ -190,10 +190,19 @@ article .post-ratings {
   padding: 1.25rem;
   margin: 0.625rem 0;
 }
-#content h4 {
-  margin: 0.9375rem 0 0.625rem 0;
+#content h3 {
+  margin-top: 3.125rem;
 }
-#content h4 strong {
+#content .level1,
+#content .level2,
+#content .level3,
+#content .level0 {
+  margin: 1.875rem 0 0.625rem 0;
+}
+#content .level1 strong,
+#content .level2 strong,
+#content .level3 strong,
+#content .level0 strong {
   background-color: #477abd;
   -moz-box-shadow: -2px 2px 0 #2d62a8 !important;
   -webkit-box-shadow: -2px 2px 0 #2d62a8 !important;
@@ -207,8 +216,19 @@ article .post-ratings {
   display: inline;
   padding: 0.3125rem 0.625rem;
   margin-right: 0.3125rem;
+  margin-left: 0.3125rem;
   position: relative;
-  top: -4px;
+  top: -7px;
+}
+#content .level1:after,
+#content .level2:after,
+#content .level3:after,
+#content .level0:after {
+  width: 74px;
+  height: 22px;
+  content: "";
+  display: inline-block;
+  background-repeat: no-repeat;
 }
 #content blockquote {
   padding: 0 0 0 0.625rem;
@@ -423,42 +443,6 @@ body {
     width: 60rem;
   }
 }
-.style-equitation {
-  background-color: #814e1f;
-}
-.style-equitation #header #logo p {
-  background-color: #814e1f;
-}
-.style-equitation .bg-grass {
-  background-image: url("images/bg-grass-equit2.jpg");
-}
-.style-equitation .bg-halo {
-  background-image: url("images/bg-blue.jpg");
-  background-color: #153e68;
-}
-.style-equitation section.bg-white h2 {
-  color: #2d62a8;
-}
-.style-equitation section.bg-white h3 {
-  color: #cd2027;
-}
-.style-foot {
-  background-color: #7cc247;
-}
-.style-foot #header #logo p {
-  background-color: #7cc247;
-}
-.style-foot .bg-grass {
-  background-image: url("images/bg-grass-foot.jpg");
-}
-.style-foot .bg-halo {
-  background-image: url("images/bg-red.jpg");
-  background-color: #e1372f;
-}
-.style-foot section.bg-white h2,
-.style-foot section.bg-white h3 {
-  color: #cd2027;
-}
 .nf-form-cont {
   margin: 1.875rem auto 0 auto;
   max-width: 25rem;
@@ -488,8 +472,21 @@ nf-field {
   border-radius: 8px;
   padding: 0.625rem;
 }
+.nf-response-msg {
+  background-color: #fff;
+  color: #000 !important;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  padding: 0.9375rem 1.25rem;
+  text-align: left;
+}
+.nf-response-msg a {
+  color: #29b24b !important;
+}
 header#header {
-  background: #99d9ec;
+  background: #fff;
 }
 header#header .fb-container {
   float: right;
@@ -522,6 +519,12 @@ header#header .fb-container {
     display: none;
   }
 }
+body.page-template-default header#header {
+  background-color: #fff;
+}
+body.page-template-default main .container {
+  max-width: 25rem;
+}
 body.page-template-dancewithhim #section-header h2 {
   text-align: left;
 }
@@ -543,10 +546,6 @@ body.page-template-dancewithhim #section-header .vertical-container {
 body.page-template-equit-landing .fb-container {
   display: none;
 }
-body.page-template-equit-landing header#header,
-body.page-template-dancewithhim header#header {
-  background-color: #fff;
-}
 body.page-template-equit-landing main,
 body.page-template-dancewithhim main {
   background: #fff;
@@ -561,7 +560,7 @@ h3 {
   margin-top: 0.9375rem;
 }
 p {
-  margin: 0.625em;
+  margin: 0.625em 0;
   font-size: 1em;
 }
 #menu nav {
@@ -622,7 +621,7 @@ p {
   margin-top: 50px;
 }
 section {
-  padding: 4.375rem 1.25rem 4.375rem 1.25rem;
+  padding: 3.125rem 1.25rem 3.125rem 1.25rem;
   text-align: center;
 }
 section:after {
@@ -701,8 +700,13 @@ section.bg-halo {
   background-position: 50% 50%;
   color: #fff;
 }
+section.bg-blue h2 {
+  color: #2d62a8;
+}
+section.bg-blue #content {
+  text-align: left;
+}
 #section-book {
-  background-image: url("images/bg-grass-equit.jpg");
   margin-top: 30px;
   padding: 80px 0 40px 0;
 }
@@ -888,6 +892,55 @@ body.error404 .container {
 body.error404 .button {
   margin: 1.875rem 0;
 }
+.style-equitation {
+  background-color: #814e1f;
+}
+.style-equitation #header #logo p {
+  background-color: #814e1f;
+}
+.style-equitation .bg-grass {
+  background-image: url("images/bg-grass-equit2.jpg");
+}
+.style-equitation .bg-halo {
+  background-image: url("images/bg-blue.jpg");
+  background-color: #153e68;
+}
+.style-equitation section.bg-white h2 {
+  color: #2d62a8;
+}
+.style-equitation section.bg-white h3 {
+  color: #cd2027;
+}
+.style-equitation #section-book {
+  background-image: url("images/bg-grass-equit.jpg");
+}
+.style-foot {
+  background-color: #7cc247;
+}
+.style-foot #header #logo p {
+  background-color: #7cc247;
+}
+.style-foot .bg-grass {
+  background-image: url("images/foot/bg-grass.jpg");
+  background-position: center center !important;
+}
+.style-foot .bg-halo {
+  background-image: url("images/foot/bg-red.jpg");
+  background-color: #e1372f;
+}
+.style-foot section.bg-white h2,
+.style-foot section.bg-white h3 {
+  color: #cd2027;
+}
+.style-foot .level1:after {
+  background-image: url("images/foot/picto-level1.png");
+}
+.style-foot .level2:after {
+  background-image: url("images/foot/picto-level2.png");
+}
+.style-foot .level3:after {
+  background-image: url("images/foot/picto-level3.png");
+}
 footer {
   color: #fff;
   padding: 1.25rem 0;
@@ -896,7 +949,6 @@ footer {
 footer a {
   color: #fff;
   display: inline-block;
-  font-weight: bold;
   font-size: 0.75em;
 }
 footer a:after {
@@ -919,9 +971,6 @@ footer p {
   font-size: 0.875em;
 }
 footer p.made {
-  font-size: 0.875em;
+  font-size: 0.75em;
   font-weight: bold;
-}
-footer p.copyright {
-  font-style: italic;
 }
