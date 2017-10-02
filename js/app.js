@@ -19,8 +19,11 @@ var app = {
 
 		app.menuItems = jQuery("#menu nav a");
 		app.scrollItems = app.menuItems.map(function(){
-			var item = jQuery(jQuery(this).attr("href"));
-			if (item.length) { return item; }
+			if(jQuery(this).attr("href").startsWith("#")){
+				var item = jQuery(jQuery(this).attr("href"));
+				if (item.length) { return item; }				
+			}
+
 		});
 
 		//app.clubSelector()

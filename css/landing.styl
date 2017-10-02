@@ -15,24 +15,23 @@ body.page-template-dancewithhim
         .vertical-container
             height: 430px;
             
-body.page-template-equit-landing
-    .fb-container
-        display: none
+
 body
     &.page-template-equit-landing, &.page-template-dancewithhim
         main 
             background: white
 h2
     font-family: "Montserrat-Black"
-    font-size: em(26)
+    font-size: em(28)
     line-height: em(20)
+    margin-bottom:em(20)
+    
 h3
     font-family: "Montserrat"
     margin-top: rem(15)
 
 p
     margin: em(10) 0;
-    font-size: em(16)
         
 #menu 
     nav 
@@ -143,6 +142,14 @@ section.bg-white{
     color:black_text;
 }
 
+section.bg-beige
+    background-color: #F2F4E7
+    color:black_text
+    h2
+        color: blue
+    
+
+
 section.bg-white em{font-size: 0.7em; line-height: }
 
 .bg-grass
@@ -173,14 +180,18 @@ section.bg-blue
 #section-book 
     margin-top: 30px
     padding: 80px 0 40px 0
+    
     h2
         margin-bottom : 20px
+        text-align: left
     .button 
         margin: 15px 0 0px 0;
     .vertical-container
-            height: 375px;
+        text-align: left
+        height: 375px;
 
 #section-preview
+    clear:none
     iframe
         margin: 20px auto 20px auto
         max-width: 100%
@@ -193,31 +204,57 @@ section.bg-blue
         color: red
     .asterisque
         font-size: em(12)
-#section-team
-    p
-        font-size: em(14)
+
+        
 #section-mission
     text-align: left
     
 
-#section-social{
+#section-social
     text-align: center;
-}
-#section-social a{
-    background-repeat: no-repeat;
-    width: 160px;
-    height: 160px;
-    display: inline-block;
-    cursor: pointer;
-    margin-top: 20px;
-}
-#section-team p {
-    font-size: 14px;
-}
+    a
+        background-repeat: no-repeat;
+        width: 160px;
+        height: 160px;
+        display: inline-block;
+        cursor: pointer;
+        margin-top: 20px;
 
-#section-axes .img-container{
+#section-team 
+    text-align: center
+    .bg, p
+        transition: opacity .5s ease-in;
+        opacity: 0
+    .bg
+        background-color: rgba(44,50, 45, 0.90)
+        width: rem(200)
+        height: rem(200)
+        position: absolute
+        border-radius: rem(200)
+    p
+        padding: 0 rem(10)
+        position: relative
+        hyphens: auto
+    h3
+        color: white
+        position: relative
+        background-color: rgba(44,50, 45, 0.40)
+    .member
+        display: inline-block
+        border-radius: rem(200)
+        height: rem(200)
+        width: rem(200)
+        background-repeat: no-repeat
+        color: white
+        
+    .member:hover
+        .bg, p
+            opacity: 1
+
+
+#section-axes .img-container
     height: 100px
-}
+
 #section-mission{
     text-align: left
 }

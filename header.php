@@ -32,6 +32,16 @@
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
 
+
+  <!--   <meta property="og:title" content="Le premier cahier de révisions personnalisé par votre centre équestre !" />
+    <meta property="og:description" content="Mon cahier d’entrainement est l’outil éducatif pour votre centre équestre.
+    Grâce à leur passion de l’équitation et du club, engagez vos jeunes cavaliers dans des révisions sportives et scolaires en prenant du plaisir ! " />
+    <meta property="og:image" content="https://s3.eu-central-1.amazonaws.com/moncahier/mon-cahier-d-equitation.png" />
+
+    /wp-content/themes/moncahierdentrainement/images/header-foot.jpg
+
+    1681824845170669 -->
+    
     <meta property="og:url" content="<?php echo get_permalink() ?>" />
     <meta property="og:type" content="product" />
     <meta property="og:title" content="<?php echo get_theme_mod('opengraph_title'); ?>" />

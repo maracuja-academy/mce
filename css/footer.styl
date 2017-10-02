@@ -1,32 +1,47 @@
 /* footer.styl */
 
 footer
-    color: white
-    padding: rem(20) 0
-    text-align: center
-    a 
-        color: white
+    background
+    color: black_text
+    padding: rem(50) 0 rem(40) 0
+    text-align: left
+    
+    .maracuja
+        background-image: url(images/logo-maracuja.png)
+        background-position:  center
+        width: rem(169)
+        height: em(47)
+        float: left
+    nav
         display: inline-block
-        font-size: em(12)
-        &:after 
-            content:"•";
-            width: 7px;
-            height: 7px;
-            color: #E3EFF9;
-            margin: rem(10);
-            font-size: em(12);
-        &:last-child:after{content: ""}
-        &:hover, &:active
-            opacity: 0.8
+        margin: rem(13) 0 0 rem(15)
+        a 
+            color: black_text
+            display: inline-block
+            &:after 
+                content:"•";
+                width: 7px;
+                height: 7px;
+                color: black_text
+                margin: rem(10) rem(5) rem(10) rem(5);
+                font-size: em(12);
+            &:last-child:after{content: ""}
+            &:hover, &:active
+                opacity: 0.8
             
-
-    p
-        margin: rem(10) 0
-        font-size: em(14)
-
-        &.made
-            font-size: em(12)
-            font-weight: bold
+    .right
+        text-align: right    
+    .made
+        font-weight: bold
         
             
-                    
+@media only screen and (max-width: 45em) 
+        
+    footer
+        text-align: center   
+        .maracuja
+            float: none;  
+            display: inline-block
+        
+        .right
+            text-align: center      

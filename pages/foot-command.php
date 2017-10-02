@@ -1,5 +1,6 @@
 
 <?php 
+//https://really-simple-ssl.com/knowledge-base/how-to-install-an-ssl-certificate-on-mamp/
 /**
  *Template Name: Foot Commande
  */
