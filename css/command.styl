@@ -29,11 +29,29 @@ body.page-template-equit-command
             text-align: left
             font-size: em(28)
             margin-left: 0
-        
+        .price
+            margin: rem(20) 0
         .amount
             font-size: em(20)
             font-weight: bold;
             color: black_text
+            &:before
+                content:"4,90€"
+                text-decoration: line-through
+                font-size: em(10)
+                font-weight: normal
+                margin-right: rem(6)
+            &:after
+                content: "Prix de lancement"
+                background-color: red_light
+                border-radius: rem(30);
+                color: white
+                text-transform: uppercase
+                padding: rem(6) rem(15) rem(4) rem(15)
+                display: inline-block
+                margin-bottom: 0
+                margin-left: rem(10)
+                font-size: em(10)
         p
             font-size: em(14)
         .quantity
@@ -52,4 +70,25 @@ body.page-template-equit-command
             display: block
             border-radius: rem(8)!important;
             margin-top: rem(20)
+
+
+.woocommerce-page:not(.single-product)
+    h3
+        margin-bottom: rem(10)!important
+    .container
+        max-width: inherit!important
+    .button 
+        box-shadow: none!important
+        font-family: SFUIDisplay
+        color:white!important
+        background-color: #477ABD!important
+    .input-text 
+        border-radius: rem(8);
+        padding: rem(10)
+        border: 1px solid black_text
+
+    
+.woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals
+    float: none
+    width: 100%
             

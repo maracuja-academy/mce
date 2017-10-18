@@ -12,11 +12,11 @@ $subtitle = get_post_custom_values('subtitle', get_the_ID())[0];
 
 get_header(); ?>
 
-<section class="bg-beige "> 
+<section class="bg-beige"> 
     <div class="container group">
         <?php woocommerce_content(); ?>
     </div>
-</header>
+</section>
 
 <section id="section-preview" class="bg-white" >
     <div class="container ">

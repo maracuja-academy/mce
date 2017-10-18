@@ -1,38 +1,31 @@
 /* general.styl */
 
 body 
-    font-family: "SFUIDisplay"
+    font-family: SFUIDisplay, Arial
     color: #2C322D
     font-smoothing()
     line-height: em(18)
     
 
-h1
-    font-family: "Montserrat-Black"
-    text-align: center
-    font-size: em(20)
-    color:#2D62A8
-    margin: rem(10) rem(10)
-   
-h2
-    font-size: em(16)
-    text-align: center
+h1, h2
+    font-family: Montserrat
+    font-size: em(28)
+    line-height: em(20)
     margin: rem(7) 0
     font-weight: bold
+    color: blue_light
+    
 h3
     font-size: em(18)
-    font-family: "Montserrat-Black"
     margin: rem(7) rem(10)
     font-weight: bold
     color: #2D62A8
 p 
-    font-size: em(14)
+    font-size: em(16)
     line-height: em(24)
 main
-    background: blue_sky
+    background: white
     overflow: auto
-    // padding-bottom: rem(50px)
-
 a
     color: #2D62A8
     &:hover, &:active, &:focus
@@ -42,6 +35,21 @@ a
 img
     max-width: 100%;
     height: auto;
+
+
+section
+    padding: rem(60) rem(20) rem(60) rem(20);
+    text-align: center;
+
+
+section:after
+  visibility: hidden
+  display: block
+  font-size: 0
+  content: " "
+  clear: both
+  height: 0
+
 
 article
     margin: rem(30) 0

@@ -11,7 +11,7 @@ function asset($name){
 
 get_header(); ?>
 
-
+<div id="landing">
 <div id="menu" >
     <div class="book-logo"></div>
     <div class="hamburger" onclick="app.menuToggle()"></div>
@@ -194,7 +194,7 @@ Nous avons créé un cahier de vacances "nouvelle génération" ou le programme 
 		</p>
 	</div>
 </section>
-
+</div>
 
 
 <?php get_footer(); ?>

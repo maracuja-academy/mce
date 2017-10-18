@@ -10,7 +10,7 @@
                     <a href="/cahier/automne2017/">Commander</a>
                     <a href="/cgv">CGV</a>
                     <a href="mailto:equitation@moncahier.fr">Nous contacter</a>
-                    <a href="https://www.facebook.com/moncahierdequitation/" target="_blank">Facebook</a>
+                    <a href="https://www.facebook.com/<?php echo get_theme_mod('fb_page_id'); ?>" target="_blank">Facebook</a>
                 </nav>
             </div>
             <div class="col-3 right">

@@ -1,5 +1,6 @@
 var app = {
 	menuOpened: false,
+    isScrolling: false,
 	scrollItems : [],
 	topMenuHeight : 0,
 	lastId : false,
@@ -7,17 +8,21 @@ var app = {
 	landing : function(){
 		
 	
+        app.menuItems = jQuery("#menu nav a");
 
 		jQuery('a[href^="#"]').on('click', function(e) {
 		    e.preventDefault();
 
-		    const scrollTop =
-		        jQuery(jQuery(this).attr('href')).position().top - 20;// - $navbar.outerHeight();
+            app.isScrolling = true
+            app.menuItems.removeClass("active");
+            jQuery(this).addClass("active");
+		    const scrollTop = jQuery(jQuery(this).attr('href')).position().top - 20;// - $navbar.outerHeight();
 
-		    jQuery('html, body').animate({ scrollTop });
+		    jQuery('html, body').animate({ scrollTop }, function(){
+                app.isScrolling = false
+            });
 		})
 
-		app.menuItems = jQuery("#menu nav a");
 		app.scrollItems = app.menuItems.map(function(){
 			if(jQuery(this).attr("href").startsWith("#")){
 				var item = jQuery(jQuery(this).attr("href"));
@@ -25,17 +30,10 @@ var app = {
 			}
 
 		});
-
-		//app.clubSelector()
-	
+	   
 		window.onscroll = function() {
 
-			var limit = jQuery("#logo").height()
-			if(window.pageYOffset > limit){
-				jQuery("body").addClass("fixed");
-			}else if(window.pageYOffset < limit){
-				jQuery("body").removeClass("fixed");
-			}
+			app.updateMenu()
 
 			var fromTop = jQuery(this).scrollTop()+app.topMenuHeight;
 			// Get id of current scroll item
@@ -49,40 +47,31 @@ var app = {
 			var id = cur && cur.length ? cur[0].id : "";
 
 			if (app.lastId !== id) {
-			   app.lastId = id;
-			   // Set/remove active class
-			   app.menuItems.removeClass("active");
-			   app.menuItems.filter("[href='#"+id+"']").addClass("active");
+                app.lastId = id;
+                // Set/remove active class
+         
+                if(!app.isScrolling){
+                    console.log("remove")
+                    app.menuItems.removeClass("active");
+                    app.menuItems.filter("[href='#"+id+"']").addClass("active");
+                }
 			} 
 
 		};
+
+        app.updateMenu()
 	},
-//https://github.com/devbridge/jQuery-Autocomplete
-	// clubSelector : function() {
-	// 	var clubs = [ 
-	// 	  {value: "Afghanistan", data: "AF"}, 
-	// 	  {value: "Aland Islands", data: "AX"}, 
-	// 	  {value: "Albania", data: "AL"}, 
-	// 	  {value: "Algeria", data: "DZ"}, 
-	// 	  {value: "American Samoa", data: "AS"}
-	// 	]
 
-	// 	jQuery('#autocomplete').autocomplete({
-	// 	    lookup: clubs,
-	// 	    onSelect: function (suggestion) {
-	// 	    	console.log(jQuery("input#nf-field-22").val())
-	// 	    	jQuery("#nf-field-22").val(suggestion.data);
-	// 	        console.log(suggestion.data);
-	// 	        console.log(jQuery("input#nf-field-22").val())
-	// 	    }
-	// 	});
-	// 	// setTimeout(function() {
-	// 	// 	jQuery("#nf-field-22").val("hey");
-	// 	// 			console.log(jQuery("input#nf-field-22").val())
+    updateMenu : function() {
+        var limit = jQuery("#logo").height()
+        if(window.pageYOffset > limit){
+            jQuery("body").addClass("fixed");
+        }else if(window.pageYOffset < limit){
+            jQuery("body").removeClass("fixed");
+        }
+    },
 
-	// 	// }, 2000);
-	// },
-
+    
 	menuToggle: function(){
 		if(app.menuOpened){
 			jQuery("#menu").removeClass("menu-opened");

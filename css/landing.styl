@@ -1,47 +1,18 @@
 /* landing.styl */
 
-body.page-template-dancewithhim
-    #section-header 
-        h2
-            text-align: left
-        .container
-            text-align: left
-            .nf-form-cont
-                margin: 0
-        .nf-response-msg
-            font-weight: bold
-            a 
-                text-decoration: underline
-        .vertical-container
-            height: 430px;
-            
-
-body
-    &.page-template-equit-landing, &.page-template-dancewithhim
-        main 
-            background: white
-h2
-    font-family: "Montserrat-Black"
-    font-size: em(28)
-    line-height: em(20)
-    margin-bottom:em(20)
-    
-h3
-    font-family: "Montserrat"
-    margin-top: rem(15)
-
-p
-    margin: em(10) 0;
-        
+#landing
+    p
+        margin: em(10) 0;
+    h2
+        margin-bottom: rem(30)
 #menu 
     nav 
-        position: absolute
+        position: relative
         background: white
         width: 1024px
         margin: 0 auto
         background: white
         text-align: center
-        top: 149px
         width: 100%
         overflow: hidden
         height: 45px
@@ -88,19 +59,7 @@ p
 
 
 
-section{
-    padding: rem(50) rem(20) rem(50) rem(20);
-    text-align: center;
-}
 
-section:after {
-  visibility: hidden;
-  display: block;
-  font-size: 0;
-  content: " ";
-  clear: both;
-  height: 0;
-}
 
 
 
@@ -130,27 +89,27 @@ section:after {
     color:white
 }
 
-section.separator{
+section.separator
     background-image: url(images/separator.png);
     background-size: 100% 22px;
     background-position: center bottom;
     background-repeat: no-repeat;
-}
 
-section.bg-white{
+
+section.bg-white
     background-color: white;
     color:black_text;
-}
+
 
 section.bg-beige
     background-color: #F2F4E7
     color:black_text
-    h2
-        color: blue
+
     
 
 
-section.bg-white em{font-size: 0.7em; line-height: }
+section.bg-white em
+    font-size: 0.7em; 
 
 .bg-grass
     background-repeat: no-repeat;
@@ -162,33 +121,25 @@ section.bg-white em{font-size: 0.7em; line-height: }
 
 section.bg-grass a{color:white;}
 section.bg-grass h3{color:white; text-align: center;}
-section.bg-halo{
+section.bg-halo
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
     color:white;
-}
+
 
 section.bg-blue
-    h2
-        color:blue
     #content 
         text-align: left
     
 /******** SECTIONS ***********/
 
 #section-book 
-    margin-top: 30px
-    padding: 80px 0 40px 0
-    
-    h2
-        margin-bottom : 20px
-        text-align: left
     .button 
         margin: 15px 0 0px 0;
     .vertical-container
         text-align: left
-        height: 375px;
+
 
 #section-preview
     clear:none
@@ -264,23 +215,28 @@ a.contact-email{background-image: url(images/email-icon.png);}
 a.contact-fb{background-image: url(images/fb-icon.png);}
 a.contact-tw{background-image: url(images/tw-icon.png);}
 
-.social {
+.social 
     text-align: center;
-}
-.social p{font-size: 0.7em}
-.social .fb-like, .social .twitter-share-button{
+
+.social p
+    font-size: 0.7em
+.social .fb-like, .social .twitter-share-button
     display: inline-block;
-}
-.social .fb-like >span{
+
+.social .fb-like >span
     height: 28px!important;
-}
-.twitter-share-button {
+
+.twitter-share-button 
     margin-left: 10px;
 
-}
 
 
 @media only screen and (max-width: 45em) 
+    #section-book 
+        .vertical-container
+            text-align: center
+            height : inherit!important
+            display: block
     #menu
         background:transparent
         a.button

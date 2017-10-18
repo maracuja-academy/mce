@@ -11,7 +11,7 @@ function asset($name){
 
 
 get_header(); ?>
-
+<div id="landing">
 
 <div id="menu" >
     
@@ -35,12 +35,12 @@ get_header(); ?>
     <div class="container">
         <div class="row">
         <div class="col-6">
-            <img src="<?php asset('equitation/book-automne.png') ?>" alt="" width="350" height="410" />
+            <img src="<?php asset('equitation/book.png') ?>" alt="Mon cahier d'entrainement Couverture"  />
         </div>
         <div class="col-6 vertical-container">
             <div class="box">
-                <h2>Le premier magazine de révisions scolaires et équestres !</h2>
-                <p>Votre enfant redécouvrira l’école grâce à sa passion pour l’équitation.</p>
+                <h2>Parce que prendre du plaisir à apprendre est la clé du monde de demain,</h2>
+                <p>nous réalisons le premier magazine de révisions scolaires et équestres ! Votre enfant redécouvrira l’école grâce à sa passion pour l’équitation.</p>
                 <a href="/cahier/automne2017/" class="button">Commander</a>
             </div>
         </div>
@@ -59,7 +59,7 @@ get_header(); ?>
                 <img src="<?php asset('equitation/picto-hippologie.png')?>">
                 <div class="detail">
                     <h3>Hippologie</h3>
-                    <p>Le pansage, l’anatomie du cheval, les couleurs de robes du poney. Une rubrique pour en découvrir toujours plus sur le monde équestre.</p>
+                    <p>Le pansage, l’anatomie du cheval, les couleurs de robes du poney. Des rubriques pour en découvrir toujours plus sur le monde équestre.</p>
                 </div>
             </div>
             <div class="col-6">
@@ -122,7 +122,7 @@ get_header(); ?>
     <div class="container">
         <h2>Feuilletez un extrait</h2>
         
-        <iframe src="//v.calameo.com/?bkcode=0051733419284511fa3c2&mode=mini&disablemousewheel=true&bgcolor=F2F4E7" width="1080" height="675" frameborder="0" scrolling="no" allowtransparency allowfullscreen ></iframe>
+        <iframe src="//v.calameo.com/?bkcode=005173341f26319a7a2f3&mode=mini&disablemousewheel=true&bgcolor=F2F4E7&page=2" width="1080" height="675" frameborder="0" scrolling="no" allowtransparency allowfullscreen ></iframe>
 
     </div>
 </section>
@@ -156,14 +156,21 @@ get_header(); ?>
             </div>
         </div>
         <div class="row">
-            <div class="col-6">
+            <div class="col-4">
+                <div class="member" style="background-image:url(<?php asset('photo-antoine.jpg')?>)">
+                     <div class="bg"></div>
+                    <h3>Antoine</h3>
+                    <p>Avec une sensibilité particulière pour l’illustration jeunesse, Antoine est graphiste et apporte aux magazines couleurs et esthétisme.</p>
+                </div>
+            </div>
+            <div class="col-4">
                 <div class="member" style="background-image:url(<?php asset('photo-vincent.png')?>)">
                      <div class="bg"></div>
                     <h3>Vincent</h3>
                     <p>Convaincu que l’éducation est en pleine mutation, Vincent a décidé de se dédier pleinement à des projets qui lient motivation et apprentissage.</p>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-4">
                 <div class="member"style="background-image:url(<?php asset('photo-damien.png')?>)">
                      <div class="bg"></div>
                     <h3>Damien</h3>
@@ -174,7 +181,7 @@ get_header(); ?>
         
 </section>
 
-
+</div>
 <?php get_footer(); ?>
 
 <script type="text/javascript">
