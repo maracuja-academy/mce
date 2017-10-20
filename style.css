@@ -463,7 +463,7 @@ body {
   }
 }
 .nf-form-cont {
-  margin: 1.875rem auto 0 auto;
+  margin-top: 1.25rem;
   max-width: 25rem;
 }
 .nf-form-cont .nf-form-fields-required {
@@ -762,6 +762,9 @@ section.bg-blue #content {
   background-repeat: no-repeat;
   color: #fff;
 }
+#section-team .member p {
+  font-size: 0.875em;
+}
 #section-team .member:hover .bg,
 #section-team .member:hover p {
   opacity: 1;
@@ -925,7 +928,8 @@ body.page-template-equit-command .vertical-container {
   text-transform: uppercase;
   padding: 0.375rem 0.9375rem 0.25rem 0.9375rem;
   display: inline-block;
-  margin-bottom: 0;
+  position: relative;
+  top: -5px;
   margin-left: 0.625rem;
   font-size: 0.625em;
 }
@@ -979,6 +983,15 @@ body.page-template-equit-command .vertical-container {
   padding: 0.625rem;
   border: 1px solid #2c322d;
 }
+.woocommerce-message {
+  border-top-color: #477abd;
+}
+.woocommerce-message:before {
+  color: #477abd;
+}
+.woocommerce-message .button {
+  color: #fff !important;
+}
 .woocommerce .cart-collaterals .cart_totals,
 .woocommerce-page .cart-collaterals .cart_totals {
   float: none;
@@ -1027,6 +1040,14 @@ body.error404 .button {
 }
 .style-foot .level3:after {
   background-image: url("images/foot/picto-level3.png");
+}
+#header-club {
+  background-color: #477abd;
+  color: #fff;
+  text-align: center;
+  padding: 0.5rem 0 0.4375rem 0;
+  width: 100%;
+  display: block;
 }
 .page-template-equit-landing #section-book {
   background-image: url("images/bg-grass-equit.jpg");
@@ -1127,6 +1148,32 @@ body.error404 .button {
   margin-left: 0;
   font-size: 0.875em;
 }
+.style-equitation #club h3 {
+  background-color: #e1372f;
+  margin-bottom: 0.625rem;
+}
+.style-equitation #club .bg-club {
+  background-image: url("images/equitation/bg-club.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #7cc247;
+  background-position: center bottom;
+}
+.style-equitation #club .row {
+  text-align: left;
+}
+.style-equitation #testimonial .col-6 {
+  text-align: center;
+  margin-top: 1.5625rem;
+}
+.style-equitation #offer i {
+  color: #cd2027;
+}
+.style-equitation #offer em {
+  color: #cd2027;
+  margin: 0.625rem 0;
+  display: block;
+}
 footer {
 background
   color: #2c322d;
@@ -1165,6 +1212,9 @@ footer nav a:active {
 }
 footer .right {
   text-align: right;
+}
+footer .made {
+  margin-top: 6px;
 }
 @media only screen and (max-width: 45em) {
   footer {

@@ -8,6 +8,7 @@
 <?php
 	$act_id = get_theme_mod('your_theme_activity_id');
 	$asset_dir = get_template_directory_uri().'/images/';
+    $activity = get_theme_mod('your_theme_activity');
 ?>
 <html <?php language_attributes(); ?>>
 <head>
@@ -60,7 +61,12 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-
+<?php if ($act_id == "equitation") { ?>
+<a href="/club#offer" id="header-club">
+    <strong>Offre Club</strong> : -20% + Livraison gratuite avec le code 
+    <strong>CLUB2017</strong> à partir de 10 cahiers ! 
+</a>
+<?php } ?>
 <header id="header">
     <div class="container">
         <div class="fb-container">
@@ -70,7 +76,7 @@
     </div>
 	<a href="/" id="logo">
 		<p>
-			<?php echo get_theme_mod('your_theme_activity'); ?>
+			<?php echo $activity ?>
 		</p>
 	</a>
 

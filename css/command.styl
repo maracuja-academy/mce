@@ -49,7 +49,8 @@ body.page-template-equit-command
                 text-transform: uppercase
                 padding: rem(6) rem(15) rem(4) rem(15)
                 display: inline-block
-                margin-bottom: 0
+                position:relative
+                top:-5px
                 margin-left: rem(10)
                 font-size: em(10)
         p
@@ -87,6 +88,12 @@ body.page-template-equit-command
         padding: rem(10)
         border: 1px solid black_text
 
+.woocommerce-message
+    border-top-color: blue_light
+    &:before
+        color: blue_light
+    .button
+        color: white!important
     
 .woocommerce .cart-collaterals .cart_totals, .woocommerce-page .cart-collaterals .cart_totals
     float: none

@@ -9,7 +9,6 @@ $bg = get_post_custom_values('page_bg', get_the_ID())[0];
 
 while ( have_posts() ) : the_post();
 ?>
-<!-- <input type="text" name="country" id="autocomplete"/> -->
 
 <section class="<?php echo $bg ?> ">
 	<div class="container " >
