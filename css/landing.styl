@@ -7,7 +7,6 @@
         margin-bottom: rem(30)
 #menu 
     nav 
-        position: relative
         background: white
         width: 1024px
         margin: 0 auto
@@ -15,8 +14,8 @@
         text-align: center
         width: 100%
         overflow: hidden
-        height: 45px
-        padding-top: 4px
+        height: rem(45)
+        padding-top: rem(12)
         z-index: 10
         border-bottom: 1px solid #F9F9F9
         a
@@ -54,6 +53,8 @@
         nav
             position: fixed
             top : 0
+    #section-book
+        margin-top : rem(45)
     #content
         margin-top: 50px
 
@@ -61,33 +62,6 @@
 
 
 
-
-
-.entry-content{
-    margin-top: 0;
-}
-.button, input[type=button]{
-    -webkit-appearance: none;
-    line-height: rem(25)
-    color: white;
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto;
-    font-family: montserrat;
-    font-weight: bold;
-    text-align: center;
-    padding: rem(7) rem(45) rem(5) rem(45);
-    border-radius: 10px;
-    box-shadow: -4px 4px 0 #CD2027!important;
-    background-color: #E1372F!important;
-    border:0;
-}
- .button:hover, .button:focus,.nf-form-layout input[type=button]:hover,.nf-form-layout input[type=submit]:focus{
-    background-color: #CD2027;
-    border:0;
-    font-weight: bold
-    color:white
-}
 
 section.separator
     background-image: url(images/separator.png);
@@ -192,7 +166,9 @@ section.bg-blue
         background-color: rgba(44,50, 45, 0.40)
     .member
         display: inline-block
-        border-radius: rem(200)
+        background-color: #9E55A1
+        background-size:cover
+        border-radius: rem(100)
         height: rem(200)
         width: rem(200)
         background-repeat: no-repeat

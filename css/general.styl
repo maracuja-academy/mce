@@ -68,6 +68,36 @@ article
         font-size: em(12)
     .post-ratings
         display: inline
+        
+
+
+.entry-content{
+    margin-top: 0;
+}
+
+.button, input[type=button]
+    -webkit-appearance: none;
+    line-height: rem(25)
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    font-family: montserrat;
+    font-weight: bold;
+    text-align: center;
+    padding: rem(7) rem(45) rem(5) rem(45);
+    border-radius: 10px;
+    box-shadow: -4px 4px 0 #CD2027!important;
+    background-color: #E1372F!important;
+    border:0;
+
+.button:hover, .button:focus,.nf-form-layout input[type=button]:hover,.nf-form-layout input[type=submit]:focus
+    background-color: #CD2027;
+    border:0;
+    font-weight: bold
+    color:white
+
+
 #content
     padding: rem(20)
     margin: rem(10) 0
@@ -160,7 +190,10 @@ i.heart
     vertical-align: middle
 
 
-
+.page-template-default
+    #content h3
+        margin-bottom: rem(20);
+    
 @media screen and (max-width: 1024px) 
     .container
         width: 748px

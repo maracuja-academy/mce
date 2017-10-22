@@ -8,15 +8,16 @@ footer
     
     .maracuja
         background-image: url(images/logo-maracuja.png)
-        background-position:  center
+        background-repeat: no-repeat
+        background-position: center
         width: rem(169)
         height: em(47)
         float: left
-    nav
+    ul
         display: inline-block
         margin: rem(13) 0 0 rem(15)
-        a 
-            color: black_text
+        li 
+           
             display: inline-block
             &:after 
                 content:"•";
@@ -26,8 +27,10 @@ footer
                 margin: rem(10) rem(5) rem(10) rem(5);
                 font-size: em(12);
             &:last-child:after{content: ""}
-            &:hover, &:active
-                opacity: 0.8
+            a
+                color: black_text
+                &:hover, &:active
+                    opacity: 0.8
             
     .right
         text-align: right    

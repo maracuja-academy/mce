@@ -5,22 +5,15 @@ var app = {
 	topMenuHeight : 0,
 	lastId : false,
 	menuItems : [],
-	landing : function(){
-		
-	
+	landing : function(){        
+
         app.menuItems = jQuery("#menu nav a");
 
 		jQuery('a[href^="#"]').on('click', function(e) {
 		    e.preventDefault();
-
-            app.isScrolling = true
             app.menuItems.removeClass("active");
             jQuery(this).addClass("active");
-		    const scrollTop = jQuery(jQuery(this).attr('href')).position().top - 20;// - $navbar.outerHeight();
-
-		    jQuery('html, body').animate({ scrollTop }, function(){
-                app.isScrolling = false
-            });
+		    app.scrollToId(jQuery(this).attr('href'))
 		})
 
 		app.scrollItems = app.menuItems.map(function(){
@@ -49,9 +42,7 @@ var app = {
 			if (app.lastId !== id) {
                 app.lastId = id;
                 // Set/remove active class
-         
                 if(!app.isScrolling){
-                    console.log("remove")
                     app.menuItems.removeClass("active");
                     app.menuItems.filter("[href='#"+id+"']").addClass("active");
                 }
@@ -62,8 +53,20 @@ var app = {
         app.updateMenu()
 	},
 
+    scrollToId : function(targetId) {
+        var targetElem = jQuery(targetId)
+        if(targetElem && !app.isScrolling){
+            app.isScrolling = true
+            const scrollTop = targetElem.position().top - 20;
+            jQuery('html, body').animate({ scrollTop }, function(){
+                app.isScrolling = false
+            });            
+        }
+
+    },
+
     updateMenu : function() {
-        var limit = jQuery("#logo").height()
+        var limit = jQuery("#logo").height() 
         if(window.pageYOffset > limit){
             jQuery("body").addClass("fixed");
         }else if(window.pageYOffset < limit){
@@ -82,5 +85,15 @@ var app = {
 		}
 	}
 
+
 }
+jQuery(document).ready(function(){
+    setTimeout(function(){
+        var hashInUrl = window.location.hash
+        if (hashInUrl) {
+            app.scrollToId(hashInUrl)
+        }
+    }, 2000)
+
+})
 

@@ -11,6 +11,8 @@ get_header();
 
 $exercice_type = get_post_custom_values('exercice_type', get_the_ID())[0];
 $youtube_id = get_post_custom_values('youtube_id', get_the_ID())[0];
+$corrige_url = get_post_custom_values('corrige_url', get_the_ID())[0];
+
 $post_type = get_post_type()
 
 ?>
@@ -50,6 +52,11 @@ $post_type = get_post_type()
             } ?> 
             </div>
         <?php } ?>
+        <br>
+        <?php if ($corrige_url) {
+            echo '<a href="/corriges/'. $corrige_url .'" class="button">Voir le corrigé</a>' ;
+        }?>
+
     </div>
 
 
