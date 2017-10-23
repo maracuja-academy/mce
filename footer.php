@@ -17,7 +17,7 @@
             </div>
             <div class="col-3 right">
                 <p class="made">Made with <i class="heart"></i> in Bordeaux</p>
-                <div class="fb-like" data-href="https://www.facebook.com/Mon-cahier-dentrainement-Gymnastique-2054475358117030/" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>        
+                <div class="fb-like" data-href="https://www.facebook.com/<?php echo get_theme_mod('fb_page_id'); ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>        
             </div>
         </div>
                 

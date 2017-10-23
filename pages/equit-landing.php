@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="book-logo"></div>
     <div class="hamburger" onclick="app.menuToggle()"></div>
     <nav>
-        <a href="#section-book">Le cahier</a>
+        <a href="#section-book">Le magazine</a>
         <a href="#section-collaboration">Contenu</a>
         <a href="#section-preview">Feuilletez un extrait</a>
         <a href="#section-team">L'équipe</a>

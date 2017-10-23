@@ -1180,6 +1180,15 @@ body.error404 .button {
   margin: 0.625rem 0;
   display: block;
 }
+.style-equitation .level1:after {
+  background-image: url("images/equitation/picto-level1.png");
+}
+.style-equitation .level2:after {
+  background-image: url("images/equitation/picto-level2.png");
+}
+.style-equitation .level3:after {
+  background-image: url("images/equitation/picto-level3.png");
+}
 .style-gym {
   background-color: #f2f4e7;
 }
