@@ -1,18 +1,46 @@
 /* foot.styl */
 
 .style-foot
-    background-color: #7cc247
-      
+    background-color: beige
+    #section-book 
+        h2
+            margin-bottom: rem(10)
+        .vertical-container
+            height: 340px
+            
+    #section-content .img-container
+        height: rem(85)
+
+    #section-mission
+        text-align: left
+        
+    #section-team
+        img
+            border-radius: rem(100)
+            overflow:hidden
+        p
+            opacity: 1
+
     #header #logo p
         background-color: #7cc247
     .bg-grass
         background-image: url(images/foot/bg-grass.jpg)
         background-position: center center!important
-    .bg-halo
-        background-image: url(images/foot/bg-red.jpg);
-        background-color: #E1372F;
-    section.bg-white h2, section.bg-white h3
-        color:red
+        h2
+            color: white
+
+    h3
+        background-color: red_light
+        border-radius: rem(30)
+        color: white
+        text-transform: uppercase
+        font-family: SFUIDisplay
+        padding: rem(8) rem(15) rem(6) rem(15)
+        display: inline-block
+        margin-bottom: 0
+        margin-left: 0
+        font-size: em(14)
+        
     
     .level1:after
         background-image: url("images/foot/picto-level1.png")
@@ -20,3 +48,5 @@
         background-image: url("images/foot/picto-level2.png")
     .level3:after
         background-image: url("images/foot/picto-level3.png")
+        
+

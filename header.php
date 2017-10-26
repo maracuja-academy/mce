@@ -69,9 +69,9 @@
 </a>
 <?php } ?>
 <header id="header">
-    <div class="container">
+<div class="container">
         <div class="fb-container">
-            <div class="fb-share-button" data-href="<?php echo $site_url ?>" data-layout="button" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=<?php echo urlencode($site_url) ?>%2&amp;src=sdkpreparse">Partager</a></div>
+            <div class="fb-like" data-href="https://www.facebook.com/<?php echo get_theme_mod('fb_page_id'); ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
         </div>
     </div>
 	<a href="/" id="logo">
