@@ -42,7 +42,7 @@ get_header(); ?>
             <div class="box">
                 <h2>Parce que prendre du plaisir à apprendre est la clé du monde de demain,</h2>
                 <p>nous réalisons le premier magazine de révisions scolaires et sportives ! Votre enfant redécouvrira le français et les mathématiques grâce à sa passion pour la gymnastique.</p>
-                <a href="#section-contact" class="button">Ça m'intéresse</a>
+                <a href="/commande" class="button">Ça m'intéresse</a>
             </div>
         </div>
         </div>
@@ -52,7 +52,7 @@ get_header(); ?>
 
 <section id="section-collaboration" class="bg-beige">
     <div class="container">
-        <h2>Conçu en collaboration<br> avec des enseignants et des moniteurs d’équitation !</h2>
+        <h2>Conçu en collaboration<br> avec des enseignants et des professeurs de gymnatisque !</h2>
         <img src="<?php asset('gym/book-open.png') ?>" width="662">
 
         <div class="row">

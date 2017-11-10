@@ -527,6 +527,9 @@ body {
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
 }
+.nf-field-element textarea {
+  height: 100px !important;
+}
 nf-field {
   text-align: left;
 }
@@ -1005,12 +1008,12 @@ body.error404 header#header {
   background-color: #fff;
 }
 body.error404 main {
-  background-color: #7cc247;
+  background-color: #f2f4e7;
   text-align: center;
   padding: 2.5rem 0;
 }
 body.error404 h2 {
-  color: #fff;
+  color: #477abd;
 }
 body.error404 .container {
   text-align: center;
@@ -1019,7 +1022,7 @@ body.error404 .button {
   margin: 1.875rem 0;
 }
 .style-foot {
-  background-color: #f5f5dc;
+  background-color: #f2f4e7;
 }
 .style-foot #section-book h2 {
   margin-bottom: 0.625rem;
@@ -1289,7 +1292,7 @@ body.error404 .button {
   color: #7d287f !important;
 }
 footer {
-background
+  background: #f2f4e7;
   color: #2c322d;
   padding: 3.125rem 0 2.5rem 0;
   text-align: left;
