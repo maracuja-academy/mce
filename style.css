@@ -1021,6 +1021,12 @@ body.error404 .container {
 body.error404 .button {
   margin: 1.875rem 0;
 }
+.style-foot.page-id-173 section {
+  padding-top: 0.625rem;
+}
+.style-foot.page-id-173 #header #logo p {
+  display: none;
+}
 .style-foot {
   background-color: #f2f4e7;
 }
