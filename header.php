@@ -63,10 +63,10 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 
 <?php if ($act_id == "equitation") { ?>
-<a href="/club#offer" id="header-club">
+<!-- <a href="/club#offer" id="header-club">
     <strong>Offre Club</strong> : -20% + Livraison gratuite avec le code 
     <strong>CLUB2017</strong> à partir de 10 cahiers ! 
-</a>
+</a> -->
 <?php } ?>
 <header id="header">
 <div class="container">
