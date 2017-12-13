@@ -3,6 +3,7 @@
 /**
  *Template Name: Equitation Commande
  */
+ 
 
 function asset($name){
     echo get_template_directory_uri().'/images/'.$name;

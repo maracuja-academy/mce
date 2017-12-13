@@ -42,7 +42,7 @@ src="https://www.facebook.com/tr?id=1774275839452092&ev=PageView&noscript=1"
         <a href="#section-collaboration">Contenu</a>
         <a href="#section-preview">Feuilletez un extrait</a>
         <a href="#section-team">L'équipe</a>
-        <a href="/cahier/automne2017/">Commander</a>
+        <a href="/cart/?add-to-cart=254">Commander</a>
     </nav>
 
 </div>
