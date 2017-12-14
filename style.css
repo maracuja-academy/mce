@@ -92,6 +92,18 @@ label {
   zoom: 1;
 }
 @font-face {
+  font-family: 'ChelseaMarket';
+  src: url("fonts/ChelseaMarket-Regular.eot?#iefix") format('embedded-opentype'), url("fonts/ChelseaMarket-Regular.woff") format('woff'), url("fonts/ChelseaMarket-Regular.ttf") format('truetype'), url("fonts/ChelseaMarket-Regular.svg#ChelseaMarket-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KaushanScript';
+  src: url("fonts/KaushanScript-Regular.eot?#iefix") format('embedded-opentype'), url("fonts/KaushanScript-Regular.woff") format('woff'), url("fonts/KaushanScript-Regular.ttf") format('truetype'), url("fonts/KaushanScript-Regular.svg#KaushanScript-Regular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'SFUIDisplay';
   src: url("fonts/SFUIDisplay-Regular.eot?#iefix") format('embedded-opentype'), url("fonts/SFUIDisplay-Regular.otf") format('opentype'), url("fonts/SFUIDisplay-Regular.woff") format('woff'), url("fonts/SFUIDisplay-Regular.ttf") format('truetype'), url("fonts/SFUIDisplay-Regular.svg#SFUIDisplay-Regular") format('svg');
   font-weight: normal;
@@ -132,32 +144,30 @@ body {
   color: #2c322d;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  line-height: 1.125em;
 }
 h1,
 h2 {
   font-family: Montserrat;
-  font-size: 1.75em;
-  line-height: 1.25em;
-  margin: 0.4375rem 0;
-  font-weight: bold;
-  color: #477abd;
-}
-h3 {
-  font-size: 1.125em;
-  margin: 0.4375rem 0.625rem;
+  font-size: 24px;
+  line-height: 29px;
   font-weight: bold;
   color: #2d62a8;
+}
+h3 {
+  font-family: Montserrat;
+  font-size: 18px;
+  color: #2c322d;
+  line-height: 22px;
 }
 h4 {
   text-transform: uppercase;
   font-weight: bold;
-  margin-top: 1.25rem;
+  margin-top: 20px;
   color: #2d62a8;
 }
 p {
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 16px;
+  line-height: 20px;
 }
 main {
   background: #fff;
@@ -176,7 +186,7 @@ img {
   height: auto;
 }
 section {
-  padding: 3.75rem 1.25rem 3.75rem 1.25rem;
+  padding: 35px 0;
   text-align: center;
 }
 section:after {
@@ -211,11 +221,15 @@ article .rating {
 article .post-ratings {
   display: inline;
 }
+.rwd-break {
+  display: block;
+}
 .entry-content {
   margin-top: 0;
 }
 .button,
 input[type=button] {
+  font-size: 14px;
   -webkit-appearance: none;
   line-height: 1.5625rem;
   color: #fff;
@@ -225,15 +239,16 @@ input[type=button] {
   font-family: montserrat;
   font-weight: bold;
   text-align: center;
-  padding: 0.4375rem 2.8125rem 0.3125rem 2.8125rem;
+  padding: 0.4375rem 1.875rem 0.3125rem 1.875rem;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-  -moz-box-shadow: -4px 4px 0 #cd2027 !important;
-  -webkit-box-shadow: -4px 4px 0 #cd2027 !important;
-  box-shadow: -4px 4px 0 #cd2027 !important;
+  -moz-box-shadow: -4px 4px 0 #d0021b !important;
+  -webkit-box-shadow: -4px 4px 0 #d0021b !important;
+  box-shadow: -4px 4px 0 #d0021b !important;
   background-color: #e1372f !important;
+  text-transform: uppercase;
   border: 0;
 }
 .button:hover,
@@ -358,12 +373,22 @@ i.heart {
 .page-template-default #content h3 {
   margin-bottom: 1.25rem;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 60em) {
   .container {
     width: 748px;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 45em) {
+  section {
+    padding: 30px 0;
+  }
+  .rwd-break {
+    display: none;
+  }
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
   .container {
     width: 100%;
   }
@@ -534,7 +559,7 @@ nf-field {
   text-align: left;
 }
 .nf-error-msg {
-  background-color: #cd2027;
+  background-color: #d0021b;
   color: #fff !important;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -587,6 +612,355 @@ header#header .fb-container {
 @media screen and (max-width: 768px) {
   header#header .fb-container {
     display: none;
+  }
+}
+#equitation-landing .font-comics {
+  font-family: KaushanScript;
+  font-weight: normal;
+  color: #e1372f;
+}
+#equitation-landing .button2 {
+  background-color: #2d62a8;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  -webkit-border-radius: 85px;
+  -moz-border-radius: 85px;
+  -o-border-radius: 85px;
+  border-radius: 85px;
+  display: block;
+  padding: 10px 5px;
+}
+#equitation-landing hr {
+  background-color: #e5e5db;
+  height: 1px;
+  border: none;
+}
+#equitation-landing header {
+  background: #93ecf5;
+}
+#equitation-landing header .logo {
+  background-image: url("images/equitation/logo-header.png");
+  width: 200px;
+  height: 142px;
+  display: block;
+  margin: 0 auto;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing header .logo {
+    background-image: url("images/equitation/logo-header@2x.png");
+    background-size: cover;
+  }
+}
+#equitation-landing header .services {
+  background: #fff2e0;
+  width: 100%;
+  text-align: center;
+  padding: 2px 0;
+}
+#equitation-landing .bg-sky {
+  background-color: #50c6db;
+  background-image: -webkit-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: -moz-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: -ms-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: -o-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: linear-gradient(top, #93ecf5, #50c6db);
+}
+#equitation-landing #section-intro {
+  padding-top: 0;
+}
+#equitation-landing #section-intro h2 {
+  margin-top: 5px;
+}
+#equitation-landing #section-intro p {
+  margin-top: 8px;
+}
+#equitation-landing #section-intro .button {
+  margin-top: 20px;
+}
+#equitation-landing #section-intro .video {
+  float: right;
+  text-align: center;
+}
+#equitation-landing #section-intro .video iframe {
+  width: 100%;
+  height: 266px;
+}
+#equitation-landing #section-noel {
+  background-image: url("images/equitation/bg-noel.png");
+  background-size: 100%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  padding-top: 0;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing #section-noel {
+    background-image: url("images/equitation/bg-noel@2x.png");
+    background-size: cover;
+  }
+}
+#equitation-landing #section-noel h2 {
+  color: #fff;
+  font-size: 36px;
+}
+#equitation-landing #section-noel h3 {
+  margin: 15px 0;
+}
+#equitation-landing #section-noel .content {
+  width: 360px;
+  margin: 0 auto;
+}
+#equitation-landing #section-noel .couv-noel {
+  float: left;
+  background-image: url("images/equitation/couv-offre-noel.png");
+  width: 150px;
+  height: 208px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing #section-noel .couv-noel {
+    background-image: url("images/equitation/couv-offre-noel@2x.png");
+    background-size: cover;
+  }
+}
+#equitation-landing #section-noel .info {
+  float: left;
+}
+#equitation-landing #section-noel .offer {
+  background-color: #fff;
+  -webkit-border-radius: 85px;
+  -moz-border-radius: 85px;
+  -o-border-radius: 85px;
+  border-radius: 85px;
+  text-align: center;
+  width: 140px;
+  height: 180px;
+  padding: 0 20px;
+  margin-top: 13px;
+}
+#equitation-landing #section-noel .offer .font-comics {
+  display: inline-block;
+  margin-top: 5px;
+  color: #e1372f;
+}
+#equitation-landing #section-noel .offer span {
+  display: inline-block;
+}
+#equitation-landing #section-noel .button {
+  top: -15px;
+  position: relative;
+  margin-left: 8px;
+}
+#equitation-landing #section-why {
+  background: #fff2e0;
+  text-align: center;
+  padding: 30px 0;
+}
+#equitation-landing #section-why h3 {
+  margin-top: 8px;
+  padding: 0 10px;
+}
+#equitation-landing #section-why ul {
+  margin-top: 5px;
+  text-align: left;
+  list-style: none;
+  padding: 0 30px;
+}
+#equitation-landing #section-why li {
+  padding-left: 20px;
+  margin-top: 5px;
+}
+#equitation-landing #section-why li:before {
+  content: "•";
+  font-size: 30px;
+  color: #d0021b;
+  width: 8px;
+  height: 8px;
+  margin-left: -20px;
+  display: block;
+  top: -3px;
+  position: relative;
+}
+#equitation-landing .section-testimonial h2 {
+  text-align: center;
+}
+#equitation-landing .section-testimonial blockquote {
+  margin: 15px auto 0 auto;
+  width: 320px;
+  text-align: center;
+}
+#equitation-landing .section-testimonial blockquote p {
+  font-size: 18px;
+  padding: 0 40px;
+  font-family: Montserrat;
+  line-height: 22px;
+}
+#equitation-landing .section-testimonial blockquote img {
+  overflow: hidden;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  margin: 15px auto 5px auto;
+  display: block;
+}
+#equitation-landing .section-testimonial blockquote:before,
+#equitation-landing .section-testimonial blockquote p:before {
+  content: "";
+  width: 30px;
+  height: 20px;
+  display: block;
+  position: relative;
+}
+#equitation-landing .section-testimonial blockquote:before {
+  background-image: url("images/equitation/icon-quote-in-yellow.png");
+  top: 16px;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing .section-testimonial blockquote:before {
+    background-image: url("images/equitation/icon-quote-in-yellow@2x.png");
+    background-size: cover;
+  }
+}
+#equitation-landing .section-testimonial blockquote p:before {
+  float: right;
+  position: absolute;
+  margin-left: 250px;
+  margin-top: -5px;
+  background-image: url("images/equitation/icon-quote-out-yellow.png");
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing .section-testimonial blockquote p:before {
+    background-image: url("images/equitation/icon-quote-out-yellow@2x.png");
+    background-size: cover;
+  }
+}
+#equitation-landing #section-content iframe {
+  margin: 20px auto 20px auto;
+  max-width: 100%;
+  max-height: 100vh;
+}
+#equitation-landing #section-content h3 {
+  margin: 20px 0 10px 0;
+}
+#equitation-landing #section-content li {
+  list-style: none;
+  height: 25px;
+}
+#equitation-landing #section-content li i {
+  color: #d0021b;
+}
+#equitation-landing #section-command h2 {
+  margin-bottom: 10px;
+}
+#equitation-landing #section-command p {
+  text-align: left;
+}
+#equitation-landing #section-command h3 {
+  margin-top: 10px;
+}
+#equitation-landing #section-command .promo {
+  text-align: center;
+}
+#equitation-landing #section-command .sell-alone img {
+  float: left;
+}
+#equitation-landing #section-command .sell-alone div {
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+#equitation-landing #section-command .sell-alone div p {
+  color: #d0021b;
+}
+#equitation-landing #section-command .button2 {
+  margin-top: 5px;
+}
+#equitation-landing #section-social .facebook {
+  background-color: #2d62a8;
+  background-image: url("images/equitation/icon-fb.png");
+  -webkit-border-radius: 85px;
+  -moz-border-radius: 85px;
+  -o-border-radius: 85px;
+  border-radius: 85px;
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  background-size: 10px 18px !important;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing #section-social .facebook {
+    background-image: url("images/equitation/icon-fb@2x.png");
+    background-size: cover;
+  }
+}
+#footer-equitation {
+  background: #88e5ef;
+}
+#footer-equitation .logo {
+  background-image: url("images/equitation/logo-header.png");
+  width: 200px;
+  height: 142px;
+  display: block;
+  margin: 0 auto;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #footer-equitation .logo {
+    background-image: url("images/equitation/logo-header@2x.png");
+    background-size: cover;
+  }
+}
+#footer-equitation .menu-footer {
+  font-size: 14px;
+  margin-top: 50px;
+}
+#footer-equitation .createdby {
+  margin-top: 40px;
+  font-size: 14px;
+  text-align: center;
+}
+#footer-equitation .maracuja {
+  width: 100%;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(bottom, #69add4 0%, #175291 84%);
+  background-image: -o-linear-gradient(bottom, #69add4 0%, #175291 84%);
+  background-image: -moz-linear-gradient(bottom, #69add4 0%, #175291 84%);
+  background-image: -webkit-linear-gradient(bottom, #69add4 0%, #175291 84%);
+  background-image: -ms-linear-gradient(bottom, #69add4 0%, #175291 84%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #69add4), color-stop(0.84, #175291));
+}
+@media screen and (max-width: 45em) {
+  #equitation-landing #section-intro .video iframe {
+    width: 100%;
+    height: 50vw;
+  }
+  #equitation-landing #section-noel {
+    background-size: 200% 100%;
+    background-position: left;
+  }
+  #equitation-landing #section-noel .couv-noel {
+    width: 156px;
+    height: 214px;
+  }
+  #equitation-landing #section-noel .offer {
+    background-color: #fff;
+    -webkit-border-radius: 85px;
+    -moz-border-radius: 85px;
+    -o-border-radius: 85px;
+    border-radius: 85px;
+    text-align: center;
+    width: 130px;
+    height: 160px;
+    padding: 0 20px;
+    margin-top: 13px;
   }
 }
 #landing p {
@@ -714,7 +1088,7 @@ section.bg-blue #content {
   margin: 10px 0;
 }
 #section-pricing i {
-  color: #cd2027;
+  color: #d0021b;
 }
 #section-pricing .asterisque {
   font-size: 0.75em;
@@ -916,29 +1290,6 @@ body.page-template-equit-command .vertical-container {
   font-size: 1.25em;
   font-weight: bold;
   color: #2c322d;
-}
-.single-product .summary .amount:before {
-  content: "4,90€";
-  text-decoration: line-through;
-  font-size: 0.625em;
-  font-weight: normal;
-  margin-right: 0.375rem;
-}
-.single-product .summary .amount:after {
-  content: "Prix de lancement";
-  background-color: #e1372f;
-  -webkit-border-radius: 1.875rem;
-  -moz-border-radius: 1.875rem;
-  -o-border-radius: 1.875rem;
-  border-radius: 1.875rem;
-  color: #fff;
-  text-transform: uppercase;
-  padding: 0.375rem 0.9375rem 0.25rem 0.9375rem;
-  display: inline-block;
-  position: relative;
-  top: -5px;
-  margin-left: 0.625rem;
-  font-size: 0.625em;
 }
 .single-product .summary p {
   font-size: 0.875em;
@@ -1148,7 +1499,7 @@ body.error404 .button {
   background: #e1372f;
 }
 .page-template-equit-landing #section-content .maths i {
-  color: #cd2027;
+  color: #d0021b;
 }
 .page-template-equit-landing #section-content .francais {
   background: #477abd;
@@ -1178,21 +1529,6 @@ body.error404 .button {
 .style-equitation .bg-grass {
   background-image: url("images/bg-grass-equit2.jpg");
 }
-.style-equitation h3 {
-  background-color: #2c322d;
-  -webkit-border-radius: 1.875rem;
-  -moz-border-radius: 1.875rem;
-  -o-border-radius: 1.875rem;
-  border-radius: 1.875rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: SFUIDisplay;
-  padding: 0.5rem 0.9375rem 0.375rem 0.9375rem;
-  display: inline-block;
-  margin-bottom: 0;
-  margin-left: 0;
-  font-size: 0.875em;
-}
 .style-equitation #club h3 {
   background-color: #e1372f;
   margin-bottom: 0.625rem;
@@ -1212,10 +1548,10 @@ body.error404 .button {
   margin-top: 1.5625rem;
 }
 .style-equitation #offer i {
-  color: #cd2027;
+  color: #d0021b;
 }
 .style-equitation #offer em {
-  color: #cd2027;
+  color: #d0021b;
   margin: 0.625rem 0;
   display: block;
 }

@@ -4,31 +4,29 @@ body
     font-family: SFUIDisplay, Arial
     color: #2C322D
     font-smoothing()
-    line-height: em(18)
     
 
 h1, h2
     font-family: Montserrat
-    font-size: em(28)
-    line-height: em(20)
-    margin: rem(7) 0
+    font-size: 24px
+    line-height: 29px
     font-weight: bold
-    color: blue_light
+    color: blue
+    
     
 h3
-    font-size: em(18)
-    margin: rem(7) rem(10)
-    font-weight: bold
-    color: #2D62A8
-   
+    font-family: Montserrat
+    font-size: 18px
+    color: black_text
+    line-height: 22px
 h4 
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: rem(20);
+    margin-top: 20px;
     color: blue;
 p 
-    font-size: em(16)
-    line-height: em(24)
+    font-size: 16px
+    line-height: 20px
 main
     background: white
     overflow: auto
@@ -44,7 +42,7 @@ img
 
 
 section
-    padding: rem(60) rem(20) rem(60) rem(20);
+    padding: 35px 0;
     text-align: center;
 
 
@@ -76,12 +74,14 @@ article
         display: inline
         
 
-
+.rwd-break
+    display: block
 .entry-content{
     margin-top: 0;
 }
 
 .button, input[type=button]
+    font-size: 14px;
     -webkit-appearance: none;
     line-height: rem(25)
     color: white;
@@ -91,10 +91,11 @@ article
     font-family: montserrat;
     font-weight: bold;
     text-align: center;
-    padding: rem(7) rem(45) rem(5) rem(45);
+    padding: rem(7) rem(30) rem(5) rem(30);
     border-radius: 10px;
-    box-shadow: -4px 4px 0 #CD2027!important;
-    background-color: #E1372F!important;
+    box-shadow: -4px 4px 0 red!important;
+    background-color: red_light!important;
+    text-transform: uppercase
     border:0;
 
 .button:hover, .button:focus,.nf-form-layout input[type=button]:hover,.nf-form-layout input[type=submit]:focus
@@ -199,12 +200,21 @@ i.heart
 .page-template-default
     #content h3
         margin-bottom: rem(20);
-    
-@media screen and (max-width: 1024px) 
+        
+@media screen and (max-width: 60em) 
     .container
         width: 748px
           
-@media screen and (max-width: 768px) 
+@media screen and (max-width: 45em) 
+/************ 720px ***********/
+
+    section
+        padding: 30px 0;
+    .rwd-break
+        display: none
+    p  
+        font-size: 14px
+        line-height: 18px
     .container
         width: 100%
     #video

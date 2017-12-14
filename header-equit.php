@@ -9,32 +9,24 @@
 	$act_id = get_theme_mod('your_theme_activity_id');
 	$asset_dir = get_template_directory_uri().'/images/';
     $activity = get_theme_mod('your_theme_activity');
-    $site_url = "http://equitation.moncahier.fr"; //site_url()
 ?>
 <html <?php language_attributes(); ?>>
 <head>
     <title>
         <?php 
-
         if (!(is_404()) && (is_single()) || (is_page())) { 
             $title = get_the_title('');
             if($title) {
                 echo $title . ' - '; 
             }
-
         } elseif (is_404()) {
-
             echo 'Not Found - '; 
-
         }
         bloginfo('name'); 
-
         ?>
     </title>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width">
-
-    
     <meta property="og:url" content="<?php echo get_permalink() ?>" />
     <meta property="og:type" content="product" />
     <meta property="og:title" content="<?php echo get_theme_mod('opengraph_title'); ?>" />
@@ -62,28 +54,14 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
-<?php if ($act_id == "equitation") { ?>
-<!-- <a href="/club#offer" id="header-club">
-    <strong>Offre Club</strong> : -20% + Livraison gratuite avec le code 
-    <strong>CLUB2017</strong> à partir de 10 cahiers ! 
-</a> -->
-<?php } ?>
-<header id="header">
-<div class="container">
-        <div class="fb-container">
-            <div class="fb-like" data-href="https://www.facebook.com/<?php echo get_theme_mod('fb_page_id'); ?>" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-        </div>
-    </div>
-	<a href="/" id="logo">
-		<p>
-			<?php echo $activity ?>
-		</p>
-	</a>
 
-</header>
+<main id="equitation-landing">
 
-
-<main>
+    <header>
+        
+        <p class="services"> Livraison en 4 jours ouvrés • Paiements sécurisés • Satisfait ou remboursé</p>
+        <a href="<?php echo site_url() ?>" class="logo"></a>
+    </header>
 	<!-- <pre> -->
 <?php 
 // print_r(get_post_custom( get_the_ID()))
