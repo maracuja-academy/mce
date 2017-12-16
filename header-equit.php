@@ -56,7 +56,10 @@
 
 
 <main id="equitation-landing">
+ <div class="bg-sky">   
+<div id="bg-sky">
 
+    <canvas id="canvas"></canvas>
     <header>
         
         <p class="services"> Livraison en 4 jours ouvrés • Paiements sécurisés • Satisfait ou remboursé</p>

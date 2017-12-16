@@ -636,8 +636,18 @@ header#header .fb-container {
   height: 1px;
   border: none;
 }
+#equitation-landing .nf-form-wrap input[type=button] {
+  background-color: #2d62a8 !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -o-border-radius: 30px;
+  border-radius: 30px;
+}
 #equitation-landing header {
-  background: #93ecf5;
+  position: relative;
 }
 #equitation-landing header .logo {
   background-image: url("images/equitation/logo-header.png");
@@ -653,10 +663,24 @@ header#header .fb-container {
   }
 }
 #equitation-landing header .services {
-  background: #fff2e0;
+  background: #2d62a8;
   width: 100%;
   text-align: center;
   padding: 2px 0;
+  color: #fff;
+}
+#equitation-landing #bg-sky {
+  background-image: url("images/equitation/bg-noel.png");
+  background-size: contain !important;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing #bg-sky {
+    background-image: url("images/equitation/bg-noel@2x.png");
+    background-size: cover;
+  }
 }
 #equitation-landing .bg-sky {
   background-color: #50c6db;
@@ -684,20 +708,10 @@ header#header .fb-container {
 }
 #equitation-landing #section-intro .video iframe {
   width: 100%;
-  height: 266px;
+  height: 249px;
 }
 #equitation-landing #section-noel {
-  background-image: url("images/equitation/bg-noel.png");
-  background-size: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
   padding-top: 0;
-}
-@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  #equitation-landing #section-noel {
-    background-image: url("images/equitation/bg-noel@2x.png");
-    background-size: cover;
-  }
 }
 #equitation-landing #section-noel h2 {
   color: #fff;
@@ -706,29 +720,24 @@ header#header .fb-container {
 #equitation-landing #section-noel h3 {
   margin: 15px 0;
 }
-#equitation-landing #section-noel .content {
-  width: 360px;
-  margin: 0 auto;
-}
 #equitation-landing #section-noel .couv-noel {
-  float: left;
+  text-align: right;
+}
+#equitation-landing #section-noel .couv-noel div {
   background-image: url("images/equitation/couv-offre-noel.png");
   width: 150px;
   height: 208px;
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  display: inline-block;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  #equitation-landing #section-noel .couv-noel {
+  #equitation-landing #section-noel .couv-noel div {
     background-image: url("images/equitation/couv-offre-noel@2x.png");
     background-size: cover;
   }
 }
-#equitation-landing #section-noel .info {
-  float: left;
-}
-#equitation-landing #section-noel .offer {
+#equitation-landing #section-noel .offer div {
   background-color: #fff;
   -webkit-border-radius: 85px;
   -moz-border-radius: 85px;
@@ -738,20 +747,21 @@ header#header .fb-container {
   width: 140px;
   height: 180px;
   padding: 0 20px;
-  margin-top: 13px;
 }
-#equitation-landing #section-noel .offer .font-comics {
+#equitation-landing #section-noel .offer div .font-comics {
   display: inline-block;
   margin-top: 5px;
   color: #e1372f;
 }
-#equitation-landing #section-noel .offer span {
+#equitation-landing #section-noel .offer div span {
   display: inline-block;
 }
-#equitation-landing #section-noel .button {
-  top: -15px;
-  position: relative;
-  margin-left: 8px;
+#equitation-landing #section-noel .offer .button {
+  position: absolute;
+  margin-left: 10px;
+  float: left;
+  display: block;
+  margin-top: -10px;
 }
 #equitation-landing #section-why {
   background: #fff2e0;
@@ -788,7 +798,7 @@ header#header .fb-container {
 }
 #equitation-landing .section-testimonial blockquote {
   margin: 15px auto 0 auto;
-  width: 320px;
+  max-width: 320px;
   text-align: center;
 }
 #equitation-landing .section-testimonial blockquote p {
@@ -827,9 +837,7 @@ header#header .fb-container {
   }
 }
 #equitation-landing .section-testimonial blockquote p:before {
-  float: right;
-  position: absolute;
-  margin-left: 250px;
+  margin-left: 100%;
   margin-top: -5px;
   background-image: url("images/equitation/icon-quote-out-yellow.png");
 }
@@ -849,7 +857,7 @@ header#header .fb-container {
 }
 #equitation-landing #section-content li {
   list-style: none;
-  height: 25px;
+  min-height: 25px;
 }
 #equitation-landing #section-content li i {
   color: #d0021b;
@@ -882,7 +890,7 @@ header#header .fb-container {
 }
 #equitation-landing #section-social .facebook {
   background-color: #2d62a8;
-  background-image: url("images/equitation/icon-fb.png");
+  background-image: url("images/icon-facebook.png");
   -webkit-border-radius: 85px;
   -moz-border-radius: 85px;
   -o-border-radius: 85px;
@@ -894,12 +902,56 @@ header#header .fb-container {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   #equitation-landing #section-social .facebook {
-    background-image: url("images/equitation/icon-fb@2x.png");
+    background-image: url("images/icon-facebook@2x.png");
     background-size: cover;
   }
 }
+#equitation-landing #section-stages {
+  background: #eafdff;
+  text-align: left;
+}
+#equitation-landing #section-stages h2 {
+  margin-bottom: 10px;
+}
+#equitation-landing #section-stages h3 {
+  margin: 10px 0 5px 0;
+}
+#equitation-landing #section-stages ul {
+  margin: 5px 0 10px;
+}
+#equitation-landing #section-stages li {
+  margin-top: 3px;
+  list-style: none;
+  padding-left: 22px;
+}
+#equitation-landing #section-stages li:before {
+  content: "";
+  background-image: url("images/equitation/icon-stage.png");
+  width: 15px;
+  height: 22px;
+  margin-left: -22px;
+  display: block;
+  position: absolute;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #equitation-landing #section-stages li:before {
+    background-image: url("images/equitation/icon-stage@2x.png");
+    background-size: cover;
+  }
+}
+#equitation-landing #section-stages li a {
+  font-weight: bold;
+}
+#equitation-landing #section-contact h2 {
+  margin-bottom: 10px;
+}
 #footer-equitation {
-  background: #88e5ef;
+  background-color: #50c6db;
+  background-image: -webkit-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: -moz-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: -ms-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: -o-linear-gradient(top, #93ecf5, #50c6db);
+  background-image: linear-gradient(top, #93ecf5, #50c6db);
 }
 #footer-equitation .logo {
   background-image: url("images/equitation/logo-header.png");
@@ -914,9 +966,9 @@ header#header .fb-container {
     background-size: cover;
   }
 }
-#footer-equitation .menu-footer {
+#footer-equitation #menu-footer {
   font-size: 14px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 #footer-equitation .createdby {
   margin-top: 40px;
@@ -926,31 +978,69 @@ header#header .fb-container {
 #footer-equitation .maracuja {
   width: 100%;
 }
+#footer-equitation .social a {
+  background-color: #98222a;
+  -webkit-border-radius: 85px;
+  -moz-border-radius: 85px;
+  -o-border-radius: 85px;
+  border-radius: 85px;
+  width: 35px;
+  height: 35px;
+  background-position: center;
+  display: inline-block;
+  background-repeat: no-repeat;
+}
+#footer-equitation .social a.facebook {
+  background-image: url("images/icon-facebook.png");
+  background-size: 10px 19px !important;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #footer-equitation .social a.facebook {
+    background-image: url("images/icon-facebook@2x.png");
+    background-size: cover;
+  }
+}
+#footer-equitation .social a.twitter {
+  background-image: url("images/icon-twitter.png");
+  background-size: 18px 15px !important;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #footer-equitation .social a.twitter {
+    background-image: url("images/icon-twitter@2x.png");
+    background-size: cover;
+  }
+}
+#footer-equitation .social a.youtube {
+  background-image: url("images/icon-youtube.png");
+  background-size: 18px 21px !important;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  #footer-equitation .social a.youtube {
+    background-image: url("images/icon-youtube@2x.png");
+    background-size: cover;
+  }
+}
 canvas {
   position: absolute;
-  top: 0;
-  left: 0;
-  background-image: linear-gradient(bottom, #69add4 0%, #175291 84%);
-  background-image: -o-linear-gradient(bottom, #69add4 0%, #175291 84%);
-  background-image: -moz-linear-gradient(bottom, #69add4 0%, #175291 84%);
-  background-image: -webkit-linear-gradient(bottom, #69add4 0%, #175291 84%);
-  background-image: -ms-linear-gradient(bottom, #69add4 0%, #175291 84%);
-  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #69add4), color-stop(0.84, #175291));
+  display: inline;
+  width: 100%;
 }
 @media screen and (max-width: 45em) {
+  #equitation-landing #bg-sky {
+    background-size: 200% 30% !important;
+    background-position: left bottom;
+  }
   #equitation-landing #section-intro .video iframe {
     width: 100%;
     height: 50vw;
   }
-  #equitation-landing #section-noel {
-    background-size: 200% 100%;
-    background-position: left;
-  }
   #equitation-landing #section-noel .couv-noel {
-    width: 156px;
-    height: 214px;
+    text-align: center;
   }
   #equitation-landing #section-noel .offer {
+    text-align: center;
+  }
+  #equitation-landing #section-noel .offer div {
     background-color: #fff;
     -webkit-border-radius: 85px;
     -moz-border-radius: 85px;
@@ -960,7 +1050,28 @@ canvas {
     width: 130px;
     height: 160px;
     padding: 0 20px;
-    margin-top: 13px;
+    margin: 13px auto 0 auto;
+  }
+  #equitation-landing #section-noel .offer .button {
+    position: relative;
+    float: none;
+  }
+  #footer-equitation {
+    background-size: auto;
+    background-position: left bottom;
+  }
+  #footer-equitation .col-3 {
+    width: 100%;
+  }
+  #footer-equitation #menu-footer {
+    margin-top: 0;
+  }
+  #footer-equitation li {
+    height: 30px;
+    display: block;
+  }
+  #footer-equitation li:after {
+    content: "";
   }
 }
 #landing p {
@@ -1521,7 +1632,7 @@ body.error404 .button {
   text-align: left;
 }
 .style-equitation {
-  background-color: #f2f4e7;
+  background-color: #fff;
 }
 .style-equitation #header #logo p {
   background-color: #814e1f;

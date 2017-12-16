@@ -13,28 +13,16 @@ function asset($name){
 
 get_header('equit'); ?>
 
-<!-- <div id="menu" >
 
-    <div class="book-logo"></div>
-    <div class="hamburger" onclick="app.menuToggle()"></div>
-    <nav>
-        <a href="#section-book">Le magazine</a>
-        <a href="#section-collaboration">Contenu</a>
-        <a href="#section-preview">Feuilletez un extrait</a>
-        <a href="#section-team">L'équipe</a>
-        <a href="/cart/?add-to-cart=254">Commander</a>
-    </nav>
 
-</div> -->
 
-<div class="bg-sky">
     <section id="section-intro" class="row ">
         <div class="container">
             <div class="col-6">
                 <h2>Parce qu’apprendre devrait toujours être passionnant ! </h2>
             </div>
             <div class="col-6 video">
-                <iframe width="720" height="410" src="https://www.youtube.com/embed/yT3mFdK7_DQ" frameborder="0" gesture="media" modestbranding="1" allow="encrypted-media" allowfullscreen></iframe>
+                <iframe width="720" height="410" src="https://www.youtube.com/embed/yT3mFdK7_DQ?showinfo=0&modestbranding=1" modestbranding=1 frameborder="0" showinfo=0 gesture="media"  allow="encrypted-media"  allowfullscreen></iframe>
             </div>
             <div class="col-6">
                 <h3>Le premier magazine éducatif <br>pour progresser  <br>grâce à sa passion de l’équitation.</h3>
@@ -49,27 +37,30 @@ get_header('equit'); ?>
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    
                     <h2 class="font-comics">Le cadeau de Noël !</h2>
                     <h3>Offrez une expérience unique aux plus jeunes !</h3>
-                    <div class="content">
-                        <div class="couv-noel"></div>
-                        <div class="info">
-                            <div class="offer vertical-container">
-                                <p class="box">
-                                    Un magazine<br>tous les 2 mois<br>pour progresser<br>grâce à l’équitation !
-                                    <strong class="font-comics">1 AN • 23€</strong>
-                                    <span>au lieu de <del>27€</del></span>
-                                </p>
-                            </div>
-                            <a href="/checkout/?add-to-cart=268" class="button">Je m'abonne</a>
-                        </div>
-                    </div>
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-3 couv-noel"> 
+                    <div></div>
+                </div>
+                <div class="col-3 offer">
+                    <div class=" vertical-container">
+                        <p class="box">
+                            Un magazine<br>tous les 2 mois<br>pour progresser<br>grâce à l’équitation !
+                            <strong class="font-comics">1 AN • 23€</strong>
+                            <span>au lieu de <del>27€</del></span>
+                        </p>
+                    </div>
+                    <a href="/boutique/abonnement" class="button">Je m'abonne</a>
+                </div>
+
             </div>
             
         </div>
     </section>
+</div>
 </div>
 <section>
     <div class="container">
@@ -95,7 +86,7 @@ get_header('equit'); ?>
                     <p>L’idée m'a conquise et mes élèves aussi : C’est un super outil pour leur transmettre la culture équestre tout en donnant du sens aux matières scolaires. </p> 
                     <img src="<?php asset('equitation/testimonial-mathilde.jpg') ?>" alt="Mathilde Trinchero" />
                     <span>Mathilde Trinchero</span><br>
-                    <strong>Monitrice et <a href="https://www.youtube.com/watch?v=z-iR6FjGcZw">Youtubeuse</a></strong>
+                    <strong>Monitrice et <a href="https://www.youtube.com/watch?v=z-iR6FjGcZw" target="_blank">Youtubeuse équestre</a></strong>
                 </blockquote>
 
             </div>
@@ -111,15 +102,15 @@ get_header('equit'); ?>
                     <p>J’aurais adoré, plus jeune, avoir ce regard sur mon apprentissage</p> 
                     <img src="<?php asset('equitation/testimonial-alexandra.jpg') ?>" alt="Alexandra Martel" />
                     <span>Alexandra Martel</span><br>
-                    <strong>Fondatrice de <a href="https://www.horsealot.com/wall/profile/alexandra/">Horsealot</a></strong>
+                    <strong>Cavalière et fondatrice de <a href="https://www.horsealot.com/wall/profile/alexandra/" target="_blank">Horsealot</a></strong>
                 </blockquote>
             </div>
             <div class="col-6">
                 <blockquote>
-                    <p>En plus du programme scolaire, je trouve ça chouette que ma fille approfondisse sa culture équestre</p> 
+                    <p>Azilis m'a pris le cahier des mains et l'a fait en une après-midi ! Elle n'as pas eu l'impression de travailler.</p> 
                     <br>
-                    <span>Hélène </span><br>
-                    <strong>Maman de Amandine, 10 ans</strong>
+                    <span>Heidi </span><br>
+                    <strong>Maman de Azilis (CM2)</strong>
                 </blockquote>
             </div>
         </div>
@@ -155,7 +146,7 @@ get_header('equit'); ?>
                 <p>L’ enfant à qui vous offrez cet abonnement recevra 6 magazines “Mon cahier d’entrainement” pendant 1 an. Il recevra également une jolie carte cadeau avec votre message lors de la réception du 1er numéro.</p>
                 <h3 class="font-comics">Offre spéciale Noël : 1 an 23€ </h3>
                 <p class="promo">au lieu de <del>27€</del></p>
-                <a href="/checkout?add-to-cart=254" class="button">S'abonner</a>
+                <a href="/boutique/abonnement" class="button">S'abonner</a>
             </div>
             <div class="col-4 sell-alone">
                  <img src="<?php asset('equitation/couv-automne-unite.jpg') ?>" />
@@ -168,34 +159,35 @@ get_header('equit'); ?>
         </div>
     </div>
 </section>
- <!-- 
-    <div id="section-stages" class="container">
-        <div class="row">
-            <div class="col-6">
-                <h2>Nos stages de révisions sportives et équestres.</h2>
-                <p>En partenariat avec les centres équestres, nous organisons des journées de stages de révisions scolaires et équestres.</p>
-                <h3>Prochain stages : </h3>
-                <ul>
-                    <li>
-                        <strong>Les Ecuries du Val de Tursan, Landira (33)</strong>
-                        Jeudi 4 Janvier 2018 - CM1-CM2-6e
-                    </li>
-                    <li>
-                        <strong>Poney Club de La Voile , Cabanac-Et-Villagrains (33)</strong>
-                        Mercredi 27 décembre - CM1-CM2-6 
-                    </li>
-                </ul>
-                <p><strong>Vous êtes intéressé par ces stages pour votre centre équestre ou celui de votre enfant, <a href="#section-contact">contactez-nous</a>. </strong></p>
-            </div>
-            <div class="col-6">
-                <img src="<?php asset('equitation/gift-card.jpg') ?>" />
-            </div>
+ 
+    <section id="section-stages" >
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>Nos stages de révisions sportives et équestres.</h2>
+                    <p>En partenariat avec les centres équestres, nous organisons des journées de stages de révisions scolaires et équestres.</p>
+                    <h3>Prochain stages : </h3>
+                    <ul>
+                        <li>
+                            <p><a href="https://www.facebook.com/ecuriesduvaldetursan" title="Les Écuries du Val de Tursan">Les Écuries du Val de Tursan</a> Landira (33)</strong><br>
+                            Jeudi 4 Janvier 2018 - CM1-CM2-6e</p>
+                        </li>
+                        <li>
+                            <p><a href="https://www.facebook.com/poneyclubdelavoile" title="Poney Club de La Voile ">Poney Club de La Voile </a> Cabanac-Et-Villagrains (33)</strong><br>
+                            Mercredi 27 décembre - CM1-CM2-6 </p>
+                        </li>
+                    </ul>
+                    <p><strong>Vous êtes intéressé par ces stages pour votre centre équestre ou celui de votre enfant, <a href="#section-contact">contactez-nous</a>. </strong></p>
+                </div>
+                <div class="col-6">
+                    <img src="<?php asset('equitation/photo-stages.jpg') ?>" title="stages Mon cahier d'entrainement" alt="stages Mon cahier d'entrainement"/>
+                </div>
 
+            </div>
         </div>
+    </section>
 
-    </div> -->
-<!--
-    <div id="section-contact" class="container">
+    <section id="section-contact" class="container">
         <div class="row">
             <div class="col-4"></div>
             <div class="col-4">
@@ -209,7 +201,7 @@ get_header('equit'); ?>
             <div class="col-4"></div>
         </div>
 
-    </div> -->
+    </section> 
 
 <hr class="container">
 
@@ -225,7 +217,122 @@ get_header('equit'); ?>
 <script type="text/javascript">
 jQuery(document).ready(function(){
     app.landing()
+    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
+    function(callback) {
+        window.setTimeout(callback, 1000 / 60);
+    };
+    window.requestAnimationFrame = requestAnimationFrame;
 
 })
+
+
+
+
+
+var flakes = [],
+    canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext("2d"),
+    flakeCount = 100,
+    mX = -100,
+    mY = -100
+
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+function snow() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+    for (var i = 0; i < flakeCount; i++) {
+        var flake = flakes[i],
+            x = mX,
+            y = mY,
+            minDist = 150,
+            x2 = flake.x,
+            y2 = flake.y;
+
+        var dist = Math.sqrt((x2 - x) * (x2 - x) + (y2 - y) * (y2 - y)),
+            dx = x2 - x,
+            dy = y2 - y;
+
+        if (dist < minDist) {
+            var force = minDist / (dist * dist),
+                xcomp = (x - x2) / dist,
+                ycomp = (y - y2) / dist,
+                deltaV = force / 2;
+
+            flake.velX -= deltaV * xcomp;
+            flake.velY -= deltaV * ycomp;
+
+        } else {
+            flake.velX *= .98;
+            if (flake.velY <= flake.speed) {
+                flake.velY = flake.speed
+            }
+            flake.velX += Math.cos(flake.step += .05) * flake.stepSize;
+        }
+
+        ctx.fillStyle = "rgba(255,255,255," + flake.opacity + ")";
+        flake.y += flake.velY;
+        flake.x += flake.velX;
+            
+        if (flake.y >= canvas.height || flake.y <= 0) {
+            reset(flake);
+        }
+
+
+        if (flake.x >= canvas.width || flake.x <= 0) {
+            reset(flake);
+        }
+
+        ctx.beginPath();
+        ctx.arc(flake.x, flake.y, 3, 0, Math.PI * 2);
+        ctx.fill();
+    }
+    requestAnimationFrame(snow);
+};
+
+function reset(flake) {
+    flake.x = Math.floor(Math.random() * canvas.width);
+    flake.y = 0;
+    flake.size = (Math.random() * 3) + 2;
+    flake.speed = (Math.random() * 1) + 0.5;
+    flake.velY = flake.speed;
+    flake.velX = 0;
+    flake.opacity = (Math.random() * 0.5) + 0.1;
+}
+
+function init() {
+    for (var i = 0; i < flakeCount; i++) {
+        var x = Math.floor(Math.random() * canvas.width),
+            y = Math.floor(Math.random() * canvas.height),
+            size = 3,
+            speed = (Math.random() * 0.5) + 0.5,
+            opacity = 1/Math.floor((Math.random() * 3)) - 0.2;
+
+        flakes.push({
+            speed: speed,
+            velY: speed,
+            velX: 0,
+            x: x,
+            y: y,
+            size: size,
+            stepSize: (Math.random()) / 100,
+            step: 0,
+            opacity: opacity
+        });
+    }
+
+    snow();
+};
+
+var canvas = document.getElementById('canvas');
+var bg_sky = jQuery('#bg-sky').height()
+canvas.height = bg_sky
+console.log(bg_sky)
+
+
+
+init();
+
 </script>
 <?php get_footer('equit'); ?>

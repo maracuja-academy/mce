@@ -18,8 +18,13 @@
         height : 1px
         border: none;
         
+    .nf-form-wrap input[type=button]
+        background-color : blue!important
+        box-shadow (none)!important
+        border-radius(30px)
+
     header
-        background : #93ecf5
+        position: relative;
         .logo
             retina('equitation/logo-header','png')
             width: 200px
@@ -27,15 +32,21 @@
             display: block
             margin: 0 auto 
         .services
-            background : peach
+            background : blue
             width : 100%
             text-align: center
             padding: 2px 0;
+            color: white
         
-        
+    #bg-sky
+        retina('equitation/bg-noel','png')
+        background-size: contain !important;
+        background-position: bottom;
+        background-repeat: no-repeat; 
+        position: relative;
     .bg-sky
-        linear_gradient(top, #93ecf5 , #50C6DB)  
-          
+        linear_gradient(top, #93ecf5 , #50C6DB) 
+
     #section-intro
         padding-top : 0
         h2 
@@ -49,52 +60,49 @@
             text-align: center;
             iframe
                 width: 100%;
-                height: 266px;
+                height: 249px;
 
 
     #section-noel
-        retina('equitation/bg-noel','png')
-        background-size: 100%;
-        background-position: bottom;
-        background-repeat: no-repeat;
+
         padding-top : 0
         h2 
             color : white
             font-size: 36px
         h3
             margin: 15px 0
-        .content
-            width: 360px;
-            margin : 0 auto
+
             
         .couv-noel
-            float : left
-            retina('equitation/couv-offre-noel','png')
-            width : 150px
-            height : 208px
-            background-size: contain;
-            background-repeat: no-repeat;
-            background-position: center;
-        .info
-            float : left
+            text-align: right
+            div
+                retina('equitation/couv-offre-noel','png')
+                width : 150px
+                height : 208px
+                background-size: contain;
+                background-repeat: no-repeat;
+                display: inline-block;
+
         .offer
-            background-color : white
-            border-radius(85px)
-            text-align: center
-            width : 140px
-            height : 180px
-            padding: 0 20px;
-            margin-top: 13px;
-            .font-comics
-                display: inline-block
-                margin-top: 5px;
-                color: red_light
-            span
-                display: inline-block
-        .button
-            top: -15px;
-            position: relative;
-            margin-left: 8px;
+            div
+                background-color : white
+                border-radius(85px)
+                text-align: center
+                width : 140px
+                height : 180px
+                padding: 0 20px;
+                .font-comics
+                    display: inline-block
+                    margin-top: 5px;
+                    color: red_light
+                span
+                    display: inline-block
+            .button
+                position: absolute;
+                margin-left: 10px;
+                float: left;
+                display: block;
+                margin-top: -10px;
             
     #section-why
         background : peach
@@ -127,7 +135,7 @@
             text-align: center
         blockquote
             margin : 15px auto 0 auto
-            width : 320px
+            max-width : 320px
             text-align: center
             p
                 font-size: 18px
@@ -151,9 +159,7 @@
                 retina('equitation/icon-quote-in-yellow','png')
                 top: 16px
             p:before
-                float : right
-                position: absolute;
-                margin-left: 250px;
+                margin-left: 100%
                 margin-top: -5px;
                 retina('equitation/icon-quote-out-yellow','png')
     #section-content
@@ -165,7 +171,7 @@
             margin : 20px 0 10px 0
         li
             list-style : none
-            height : 25px
+            min-height : 25px
             i 
                 color : red
                 
@@ -192,47 +198,86 @@
     #section-social
         .facebook 
             background-color : blue
-            retina('equitation/icon-fb','png')            
+            retina('icon-facebook','png')            
             border-radius(85px)
             width : 35px
             height : 35px
             background-position: center;
             background-size : 10px 18px!important
-            
+    
+    #section-stages
+        background : #EAFDFF
+        text-align: left
+        h2 
+            margin-bottom : 10px 
+        h3
+            margin : 10px 0 5px 0
+        ul
+            margin : 5px 0 10px
+        li 
+            margin-top : 3px
+            list-style : none
+            padding-left : 22px
+            &:before
+                content: ""
+                retina('equitation/icon-stage','png') 
+                width : 15px
+                height : 22px
+                margin-left : -22px
+                display:block
+                position: absolute;
+            a
+                font-weight: bold
+    
+    #section-contact
+        h2
+            margin-bottom : 10px
+        
 #footer-equitation
     
-    background : #88E5EF
+    linear_gradient(top, #93ecf5 , #50C6DB) 
+    
     .logo
         retina('equitation/logo-header','png')
         width: 200px
         height: 142px
         display: block
         margin: 0 auto
-    .menu-footer
+    #menu-footer
         font-size: 14px;
-        margin-top: 50px; 
+        margin-top: 60px;
     .createdby
         margin-top: 40px; 
         font-size: 14px;
         text-align: center
     .maracuja
         width : 100%
+    .social
+        a
+            &.facebook
+                retina('icon-facebook','png')
+                background-size : 10px 19px!important
+            &.twitter
+                retina('icon-twitter','png')
+                background-size : 18px 15px!important
+            &.youtube
+                retina('icon-youtube','png')
+                background-size : 18px 21px!important
+                
+            background-color : #98222A
+            border-radius(85px)
+            width : 35px
+            height : 35px
+            background-position: center;
+            display: inline-block;
+            background-repeat: no-repeat;
+            
         
 canvas{
-    position:absolute;top:0;left:0
-    background-image: linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -o-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -moz-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -webkit-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
-    background-image: -ms-linear-gradient(bottom, rgb(105,173,212) 0%, rgb(23,82,145) 84%);
+    position: absolute;
+    display: inline;
+    width:100%
     
-    background-image: -webkit-gradient(
-        linear,
-        left bottom,
-        left top,
-        color-stop(0, rgb(105,173,212)),
-        color-stop(0.84, rgb(23,82,145))
-    );
 }
 // @media screen and (max-width: 60em) 
 //     #equitation-landing
@@ -245,22 +290,41 @@ canvas{
 @media screen and (max-width: 45em)
      
     #equitation-landing
+        #bg-sky
+            background-size: 200% 30%!important;
+            background-position: left bottom;
         #section-intro
             .video
                 iframe
                     width: 100%;
                     height: 50vw;  
         #section-noel
-            background-size: 200% 100%;
-            background-position: left;
+            
             .couv-noel
-                width : 156px
-                height : 214px
-            .offer
-                background-color : white
-                border-radius(85px)
                 text-align: center
-                width : 130px
-                height : 160px
-                padding: 0 20px;
-                margin-top: 13px;
+            .offer
+                text-align:center
+                div
+                    background-color : white
+                    border-radius(85px)
+                    text-align: center
+                    width : 130px
+                    height : 160px
+                    padding: 0 20px;
+                    margin: 13px auto 0 auto;
+                .button
+                    position:relative
+                    float : none
+                
+    #footer-equitation
+        background-size: auto;
+        background-position: left bottom;
+        .col-3
+            width: 100%
+        #menu-footer
+            margin-top : 0
+        li
+            height : 30px
+            display: block;
+            &:after 
+                content:""

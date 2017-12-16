@@ -2,11 +2,13 @@
 <footer id="footer-equitation">
     <div class="container">
         <div class="row">
-            <div class="col-3 logo"></div>
-            <div class="col-6">
+            <div class="col-3 ">
+                <div class="logo"></div>
+            </div>
+            <div class="col-7">
                 <?php wp_nav_menu(array('menu' => 'Footer')); ?>
             </div>
-            <div class="col-3 createdby">
+            <div class="col-2 createdby">
                 
                 <p>Conçu par</p>
                 <a class="maracuja" href=""></a>

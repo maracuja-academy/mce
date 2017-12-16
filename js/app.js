@@ -87,6 +87,7 @@ var app = {
 
 
 }
+
 jQuery(document).ready(function(){
     setTimeout(function(){
         var hashInUrl = window.location.hash
