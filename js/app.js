@@ -83,7 +83,33 @@ var app = {
 			jQuery("#menu").addClass("menu-opened");
 			app.menuOpened = true
 		}
-	}
+	},
+
+    chooseLevel : function(){
+        var formOtherLevels = jQuery(".form-other-levels")
+        var commandButton = jQuery("#add-to-cart")
+        jQuery('#level-radio input[type=radio]').on('change',function(){
+            if(jQuery(this).val() =="cycle-other"){
+                formOtherLevels.slideDown()
+                commandButton.hide()
+            }else{
+                formOtherLevels.hide()
+                commandButton.show()
+            }
+            
+        });
+        
+    },
+
+    command : function(){
+        var giftCardDiv = jQuery("#gift-card-command")
+        jQuery("#gift-card-checkbox").on('click', function(){
+            if ( jQuery(this).is(':checked') )
+                giftCardDiv.slideDown();
+            else
+                giftCardDiv.hide();
+        });
+    }
 
 
 }

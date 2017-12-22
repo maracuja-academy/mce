@@ -16,15 +16,16 @@ get_header('equit'); ?>
 
 
 
-    <section id="section-intro" class="row ">
+    <section id="section-intro">
         <div class="container">
-            <div class="col-6">
+            <div class="row">
                 <h2>Parce qu’apprendre devrait toujours être passionnant ! </h2>
             </div>
-            <div class="col-6 video">
-                <iframe width="720" height="410" src="https://www.youtube.com/embed/yT3mFdK7_DQ?showinfo=0&modestbranding=1" modestbranding=1 frameborder="0" showinfo=0 gesture="media"  allow="encrypted-media"  allowfullscreen></iframe>
+            <div class="row video">
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/yT3mFdK7_DQ?showinfo=0&modestbranding=1&rel=0 " modestbranding=1 frameborder="0" showinfo=0 gesture="media"  allow="encrypted-media"  allowfullscreen></iframe>
             </div>
-            <div class="col-6">
+
+            <div class="row">
                 <h3>Le premier magazine éducatif <br>pour progresser  <br>grâce à sa passion de l’équitation.</h3>
                 <p>Conçu avec des professeurs des écoles et des moniteurs d’équitation.</p>
                 <a href="#section-content" class="button">Je découvre</a>
@@ -63,59 +64,79 @@ get_header('equit'); ?>
 </div>
 </div>
 <section>
+   
+<section id="section-why" >
     <div class="container">
         <div class="row">
-           
-            <div id="section-why" class="col-6">
-                <h2>Pourquoi ce magazine ?</h2>
-                <h3>Parce qu’apprendre devrait toujours être passionnant ! </h3>
-                <ul>
-                    <li>Parce que nous croyons que “prendre du plaisir à apprendre” est clé pour nos enfants. 
-                    </li>
-                    <li>Parce que l’équitation est une fabuleuse passion qui favorise le respect des autres, de la vie animale et du milieu naturel. </li>
-                    <li>Parce que donner du sens aux apprentissages, et notamment à travers sa passion, permet d’apprendre en diminuant la sensation d’effort.  </li>
-                </ul>
-            </div>
-            
-          
-
-             <div class="col-6 section-testimonial">
-                <h2>Conçu pour les enfants, <br> envié par les plus grands !</h2>
-                
-                <blockquote>
-                    <p>L’idée m'a conquise et mes élèves aussi : C’est un super outil pour leur transmettre la culture équestre tout en donnant du sens aux matières scolaires. </p> 
-                    <img src="<?php asset('equitation/testimonial-mathilde.jpg') ?>" alt="Mathilde Trinchero" />
-                    <span>Mathilde Trinchero</span><br>
-                    <strong>Monitrice et <a href="https://www.youtube.com/watch?v=z-iR6FjGcZw" target="_blank">Youtubeuse équestre</a></strong>
-                </blockquote>
-
-            </div>
-
-
+        <h2>Pourquoi ce magazine ?</h2>
+        <h3>Parce qu’apprendre devrait toujours être passionnant ! </h3>  
         </div>
-    </div>
-     
-    <div class="container">
-        <div class="row  section-testimonial">
-            <div class="col-6">
-                <blockquote>
-                    <p>J’aurais adoré, plus jeune, avoir ce regard sur mon apprentissage</p> 
-                    <img src="<?php asset('equitation/testimonial-alexandra.jpg') ?>" alt="Alexandra Martel" />
-                    <span>Alexandra Martel</span><br>
-                    <strong>Cavalière et fondatrice de <a href="https://www.horsealot.com/wall/profile/alexandra/" target="_blank">Horsealot</a></strong>
-                </blockquote>
+        <div class="row values">
+            <div class="col-4">
+                <p>Parce que nous croyons que “prendre du plaisir à apprendre” est clé pour nos enfants. </p>
             </div>
-            <div class="col-6">
-                <blockquote>
-                    <p>Azilis m'a pris le cahier des mains et l'a fait en une après-midi ! Elle n'as pas eu l'impression de travailler.</p> 
-                    <br>
-                    <span>Heidi </span><br>
-                    <strong>Maman de Azilis (CM2)</strong>
-                </blockquote>
+            <div class="col-4">
+                <p>Parce que l’équitation est une fabuleuse passion qui favorise le respect des autres, de la vie animale et du milieu naturel.</p>
             </div>
+            <div class="col-4">
+                <p>Parce que donner du sens aux apprentissages, et notamment à travers sa passion, permet d’apprendre en diminuant la sensation d’effort.</p>
+            </div> 
         </div>
+
     </div>
 </section>
+            
+ <section id="section-testimonial">
+
+    <div class="row">
+        <h2>Conçu pour les enfants, <br> envié par les plus grands !</h2>
+    </div>
+
+    <div class="row">
+        
+        <div class="col-4">
+           <blockquote >
+                <p>J’aurais adoré, plus jeune, avoir ce regard sur mon apprentissage</p> 
+                <img src="<?php asset('equitation/testimonial-alexandra.jpg') ?>" alt="Alexandra Martel" />
+                <span>Alexandra Martel</span>
+                <strong>Cavalière et fondatrice de <a href="https://www.horsealot.com/wall/profile/alexandra/" target="_blank">Horsealot</a></strong>
+            </blockquote>
+        </div>
+        <div class="col-4">
+            <blockquote >
+                <p>L’idée m'a conquise et mes élèves aussi : C’est un super outil pour leur transmettre la culture équestre tout en donnant du sens aux matières scolaires. </p> 
+                
+                <span>Mathilde Trinchero</span>
+                <strong>Monitrice et <a href="https://www.youtube.com/watch?v=z-iR6FjGcZw" target="_blank">Youtubeuse équestre</a></strong>
+                <div class="video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/z-iR6FjGcZw?showinfo=0&modestbranding=1&rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                
+                
+            </blockquote>
+        </div>
+        <div class="col-4">
+            <blockquote >
+                <p>En plus du programme scolaire, je trouve ça chouette que ma fille puisse approfondir sa culture équestre !</p> 
+                
+                <span>Hélène</span>
+                <strong>Maman de Amandine (CM2)</strong>
+                <div class="video">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/EAILL8EfcYc?showinfo=0&modestbranding=1&rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+            </blockquote> 
+   <!--          <blockquote >
+                <p>Azilis m'a pris le cahier des mains et l'a fait en une après-midi ! Elle n'a pas eu l'impression de travailler.</p> 
+                
+                <span>Heidi </span>
+                <strong>Maman de Azilis (CM2)</strong>
+      
+            </blockquote>  -->
+        </div>   
+    </div>
+    
+</section>
+
 <hr class="container">
 <section id="section-content">
     <div class="container">
@@ -193,9 +214,7 @@ get_header('equit'); ?>
             <div class="col-4">
                 <h2>Une question ? Ecrivez-nous.</h2>
                 <p>Vous avez une question, des conseils, critiques, idées à nous proposer, c’est par ici :</p>
-                <?php while ( have_posts() ) : the_post(); ?>
-                    <?php the_content() ?>
-                <?php endwhile; // end of the loop. ?>
+                <?php Ninja_Forms()->display( 3 ); ?>
      
             </div>
             <div class="col-4"></div>
@@ -224,9 +243,6 @@ jQuery(document).ready(function(){
     window.requestAnimationFrame = requestAnimationFrame;
 
 })
-
-
-
 
 
 var flakes = [],

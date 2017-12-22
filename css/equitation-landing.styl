@@ -37,6 +37,7 @@
             text-align: center
             padding: 2px 0;
             color: white
+            display:block
         
     #bg-sky
         retina('equitation/bg-noel','png')
@@ -56,15 +57,14 @@
         .button 
             margin-top : 20px
         .video
-            float: right;
             text-align: center;
+            margin: 30px 0;
             iframe
-                width: 100%;
-                height: 249px;
+                width : 100%
 
 
     #section-noel
-
+        margin-top: 30px;
         padding-top : 0
         h2 
             color : white
@@ -111,26 +111,25 @@
         h3 
             margin-top : 8px
             padding : 0 10px
-        ul
+        .values
             margin-top : 5px
             text-align: left
             list-style : none
-            padding: 0 30px;
-        li 
-            padding-left: 20px;
-            margin-top : 5px
+        .col-4 
+            padding-top: 20px;
+            margin-top : 10px
             &:before
                 content: "•"
                 font-size: 30px
                 color : red
                 width : 8px;
                 height : 8px;
-                margin-left : -20px
+                margin-left : 50%
                 display:block
-                top: -3px;
+                top: -28px;
                 position: relative;
     
-    .section-testimonial
+    #section-testimonial
         h2 
             text-align: center
         blockquote
@@ -162,6 +161,16 @@
                 margin-left: 100%
                 margin-top: -5px;
                 retina('equitation/icon-quote-out-yellow','png')
+            span
+                display: block
+                margin-top : 10px
+
+            .video
+                margin : 10px 0
+                iframe
+                    max-height: 180px;
+                    max-width: 100%;
+                
     #section-content
         iframe
             margin: 20px auto 20px auto;
@@ -232,6 +241,9 @@
     #section-contact
         h2
             margin-bottom : 10px
+    
+#gift-card-command
+    display: none
         
 #footer-equitation
     
@@ -315,6 +327,14 @@ canvas{
                 .button
                     position:relative
                     float : none
+        #section-why
+            .col-4
+                p
+                    margin: 0 0 0 30px;
+                &:before
+                    margin-left : 0px
+                    display:block
+                    top: -3px;
                 
     #footer-equitation
         background-size: auto;

@@ -62,7 +62,7 @@
     <canvas id="canvas"></canvas>
     <header>
         
-        <p class="services"> Livraison en 4 jours ouvrés • Paiements sécurisés • Satisfait ou remboursé</p>
+        <a href="/boutique" class="services">  Livraison gratuite avec l'abonnement • Paiements sécurisés • Livraison en 4 jours ouvrés </a>
         <a href="<?php echo site_url() ?>" class="logo"></a>
     </header>
 	<!-- <pre> -->
