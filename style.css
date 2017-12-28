@@ -796,67 +796,70 @@ header#header .fb-container {
 #equitation-landing #section-testimonial h2 {
   text-align: center;
 }
-#equitation-landing #section-testimonial blockquote {
+#equitation-landing #section-testimonial .blockquote {
   margin: 15px auto 0 auto;
-  max-width: 320px;
+  max-width: 100%;
   text-align: center;
 }
-#equitation-landing #section-testimonial blockquote p {
+#equitation-landing #section-testimonial .blockquote p {
   font-size: 18px;
   padding: 0 40px;
   font-family: Montserrat;
   line-height: 22px;
 }
-#equitation-landing #section-testimonial blockquote img {
+#equitation-landing #section-testimonial .blockquote img {
   overflow: hidden;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -o-border-radius: 15px;
-  border-radius: 15px;
-  width: 30px;
-  height: 30px;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  -o-border-radius: 35px;
+  border-radius: 35px;
+  width: 70px;
+  height: 70px;
   margin: 15px auto 5px auto;
   display: block;
 }
-#equitation-landing #section-testimonial blockquote:before,
-#equitation-landing #section-testimonial blockquote p:before {
+#equitation-landing #section-testimonial .blockquote span {
+  display: block;
+  margin-top: 10px;
+}
+#equitation-landing #section-testimonial .blockquote .video {
+  margin: 10px 0;
+}
+#equitation-landing #section-testimonial .blockquote .video iframe {
+  max-height: 180px;
+  max-width: 100%;
+}
+#equitation-landing #section-testimonial .blockquote blockquote:before,
+#equitation-landing #section-testimonial .blockquote blockquote p:before {
   content: "";
   width: 30px;
   height: 20px;
   display: block;
   position: relative;
 }
-#equitation-landing #section-testimonial blockquote:before {
+#equitation-landing #section-testimonial .blockquote blockquote:before {
   background-image: url("images/equitation/icon-quote-in-yellow.png");
   top: 16px;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  #equitation-landing #section-testimonial blockquote:before {
+  #equitation-landing #section-testimonial .blockquote blockquote:before {
     background-image: url("images/equitation/icon-quote-in-yellow@2x.png");
     background-size: cover;
   }
 }
-#equitation-landing #section-testimonial blockquote p:before {
+#equitation-landing #section-testimonial .blockquote blockquote p:before {
   margin-left: 100%;
   margin-top: -5px;
   background-image: url("images/equitation/icon-quote-out-yellow.png");
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  #equitation-landing #section-testimonial blockquote p:before {
+  #equitation-landing #section-testimonial .blockquote blockquote p:before {
     background-image: url("images/equitation/icon-quote-out-yellow@2x.png");
     background-size: cover;
   }
 }
-#equitation-landing #section-testimonial blockquote span {
-  display: block;
-  margin-top: 10px;
-}
-#equitation-landing #section-testimonial blockquote .video {
-  margin: 10px 0;
-}
-#equitation-landing #section-testimonial blockquote .video iframe {
-  max-height: 180px;
-  max-width: 100%;
+#equitation-landing #section-testimonial .col-4 blockquote {
+  max-width: 320px;
 }
 #equitation-landing #section-content iframe {
   margin: 20px auto 20px auto;

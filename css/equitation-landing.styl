@@ -132,10 +132,13 @@
     #section-testimonial
         h2 
             text-align: center
-        blockquote
+            
+        
+        .blockquote
             margin : 15px auto 0 auto
-            max-width : 320px
+            max-width : 100%
             text-align: center
+            
             p
                 font-size: 18px
                 padding : 0 40px
@@ -143,24 +146,11 @@
                 line-height : 22px
             img
                 overflow:hidden
-                border-radius(15px)
-                width : 30px
-                height : 30px
+                border-radius(35px)
+                width : 70px
+                height : 70px
                 margin: 15px auto 5px auto;
                 display : block
-            &:before, p:before
-                content : ""
-                width : 30px;
-                height : 20px;
-                display:block
-                position: relative;
-            &:before
-                retina('equitation/icon-quote-in-yellow','png')
-                top: 16px
-            p:before
-                margin-left: 100%
-                margin-top: -5px;
-                retina('equitation/icon-quote-out-yellow','png')
             span
                 display: block
                 margin-top : 10px
@@ -170,7 +160,24 @@
                 iframe
                     max-height: 180px;
                     max-width: 100%;
-                
+            blockquote
+                &:before, p:before
+                    content : ""
+                    width : 30px;
+                    height : 20px;
+                    display:block
+                    position: relative;
+                &:before
+                    retina('equitation/icon-quote-in-yellow','png')
+                    top: 16px
+                p:before
+                    margin-left: 100%
+                    margin-top: -5px;
+                    retina('equitation/icon-quote-out-yellow','png')
+            
+                    
+        .col-4 blockquote
+            max-width : 320px       
     #section-content
         iframe
             margin: 20px auto 20px auto;

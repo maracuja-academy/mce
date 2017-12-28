@@ -38,8 +38,8 @@ get_header('equit'); ?>
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h2 class="font-comics">Le cadeau de Noël !</h2>
-                    <h3>Offrez une expérience unique aux plus jeunes !</h3>
+                    <h2 class="font-comics">Offre spéciale vacances !</h2>
+                    <h3>Jusqu'au 8 janvier, offrez à votre enfant une expérience unique pour cette nouvelle année !</h3>
                 </div>
             </div>
             <div class="row">
@@ -86,54 +86,88 @@ get_header('equit'); ?>
     </div>
 </section>
             
- <section id="section-testimonial">
+ <section id="section-testimonial" class="container">
 
     <div class="row">
         <h2>Conçu pour les enfants, <br> envié par les plus grands !</h2>
     </div>
 
     <div class="row">
+        <div class="col-12 ">
         
-        <div class="col-4">
-           <blockquote >
-                <p>J’aurais adoré, plus jeune, avoir ce regard sur mon apprentissage</p> 
-                <img src="<?php asset('equitation/testimonial-alexandra.jpg') ?>" alt="Alexandra Martel" />
-                <span>Alexandra Martel</span>
-                <strong>Cavalière et fondatrice de <a href="https://www.horsealot.com/wall/profile/alexandra/" target="_blank">Horsealot</a></strong>
-            </blockquote>
-        </div>
-        <div class="col-4">
-            <blockquote >
-                <p>L’idée m'a conquise et mes élèves aussi : C’est un super outil pour leur transmettre la culture équestre tout en donnant du sens aux matières scolaires. </p> 
+            <div class="blockquote">
+                <img src="<?php asset('equitation/testimonial-yael.jpg') ?>" alt="Yaël Blaise-Hériteau" />
+                <span>Yaël Blaise-Hériteau</span>
                 
+                <strong>Professeur des écoles à URT - Pyrénées Atlantiques<br> Psychologue de formation et auteur de <a href="http://bit.ly/2yYFsxu" target="_blank" >CHECKLIST mon enfant réussit à l’école </a></strong>
+                <blockquote >
+                    <p>Je découvre avec plaisir qu’un magazine de révision s’appuie enfin sur la passion des enfants!<br>
+                   
+                   En classe, comme dans la vie, on apprend mieux dans la pédagogie de projet c’est-à-dire lorsque les apprentissages concernent entre autre nos passions, nos réalités et ont du sens.<br><br>
+                    
+                    Mon cahier d’entrainement équitation se base sur la motivation des élèves passionnés de chevaux. Bien élaboré, permettant une révision des notions par niveau de difficulté, ce magazine connecté permet d’allier les notions cycle 3 à des vidéos ludiques, des textes traitant de l’équitation, des problèmes de maths mettant en scène des classements de chevaux... Tout est pensé pour que l’enfant prenne du plaisir et apprenne en donnant du sens à ses apprentissages.<br><br>
+                    
+                    Psychologue reconvertie en professeur des écoles de cycle 3, auteure d’un livre-guide pour aider les parents à suivre scolairement leur enfant, je conseille particulièrement ce magazine qui apporte, selon moi, une plus-value au monde des magazines éducatifs. Bravo à vous!</p>
+                </blockquote>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        
+
+        <div class="col-4 ">
+            <div class="blockquote">           
+                <span>Heidi </span>
+                <strong>Maman de Azilis (CM2)</strong>
+                <div class="video">
+                    <iframe width="853" height="480" src="https://www.youtube.com/embed/L9OJmHcWCXM?showinfo=0&modestbranding=1&rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <blockquote >
+                    <p>Azilis m'a pris le cahier des mains et l'a fait en un après-midi ! Elle n'a pas eu l'impression de travailler.</p> 
+                    
+                    
+            </blockquote> 
+            </div>
+        </div>
+
+        
+        <div class="col-4 ">
+            <div class="blockquote">
                 <span>Mathilde Trinchero</span>
                 <strong>Monitrice et <a href="https://www.youtube.com/watch?v=z-iR6FjGcZw" target="_blank">Youtubeuse équestre</a></strong>
                 <div class="video">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/z-iR6FjGcZw?showinfo=0&modestbranding=1&rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
-                
-                
-            </blockquote>
+                <blockquote >
+                    <p>L’idée m'a conquise et mes élèves aussi : C’est un super outil pour leur transmettre la culture équestre tout en donnant du sens aux matières scolaires. </p> 
+                </blockquote>
+            </div>
         </div>
-        <div class="col-4">
-            <blockquote >
-                <p>En plus du programme scolaire, je trouve ça chouette que ma fille puisse approfondir sa culture équestre !</p> 
-                
+
+        <div class="col-4 ">
+            <div class="blockquote">
                 <span>Hélène</span>
                 <strong>Maman de Amandine (CM2)</strong>
                 <div class="video">
                     <iframe width="853" height="480" src="https://www.youtube.com/embed/EAILL8EfcYc?showinfo=0&modestbranding=1&rel=0" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
                 </div>
-            </blockquote> 
-   <!--          <blockquote >
-                <p>Azilis m'a pris le cahier des mains et l'a fait en une après-midi ! Elle n'a pas eu l'impression de travailler.</p> 
-                
-                <span>Heidi </span>
-                <strong>Maman de Azilis (CM2)</strong>
-      
-            </blockquote>  -->
+                <blockquote > 
+                    <p>En plus du programme scolaire, je trouve ça chouette que ma fille puisse approfondir sa culture équestre !</p> 
+                </blockquote> 
+            </div>
         </div>   
+
+  <!--       <div class="col-4">
+            <blockquote >
+                <p>J’aurais adoré, plus jeune, avoir ce regard sur mon apprentissage</p> 
+                <img src="<?php asset('equitation/testimonial-alexandra.jpg') ?>" alt="Alexandra Martel" />
+                <span>Alexandra Martel</span>
+                <strong>Cavalière et fondatrice de <a href="https://www.horsealot.com/wall/profile/alexandra/" target="_blank">Horsealot</a></strong>
+            </blockquote>
+        </div> -->
     </div>
+    
     
 </section>
 
