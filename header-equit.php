@@ -42,6 +42,8 @@
     <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $asset_dir.$act_id.'/152.png' ?>">  
     <link rel="apple-touch-icon" sizes="167x167" href="<?php echo $asset_dir.$act_id.'/167.png' ?>">  
     <?php wp_head();?>
+
+   
 </head>
 <body <?php body_class('style-'.$act_id ); ?> >
 
@@ -62,7 +64,7 @@
     <canvas id="canvas"></canvas>
     <header>
         
-        <a href="/boutique" class="services">  Livraison gratuite avec l'abonnement • Paiements sécurisés • Livraison en 4 jours ouvrés </a>
+        <a href="/boutique/abonnement" class="services">  Offre spéciale : 23€ l'abonnement jusqu'au 14 janvier ! </a>
         <a href="<?php echo site_url() ?>" class="logo"></a>
     </header>
 	<!-- <pre> -->

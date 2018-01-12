@@ -110,6 +110,33 @@ function some_custom_checkout_field_update_order_meta( $order_id ) {
         update_post_meta( $order_id, 'Cadeau - Message', sanitize_text_field( $_POST['gift_field_message'] ) );
     }
 }
+
+
+
+/*********************** Pour ********************/
+add_action( 'woocommerce_after_order_notes', 'how_know_field' );
+function how_know_field( $checkout ) {
+
+    woocommerce_form_field( 'how_field', array(
+    'type'         => 'text',
+    'class'         => array('form-row-wide'),
+    'label'         => __('Comment avez-vous découvert notre magazine ?'),
+    'placeholder'   => __('(Facebook, un ami, )'),
+    'required'     => false,
+    ), $checkout->get_value( 'how_field' ));
+    
+}
+
+add_action( 'woocommerce_checkout_update_order_meta', 'gift_name_checkout_field_how_know' );
+function gift_name_checkout_field_how_know( $order_id ) {
+    if ( ! empty( $_POST['how_field'] ) ) {
+        update_post_meta( $order_id, 'a connu Maracuja par :', sanitize_text_field( $_POST['how_field'] ) );
+    }
+}
+
+
+/*********************** Add JS ********************/
+
 function add_jscript() {
 echo '<script > jQuery(document).ready(function(){
     app.command()}) </script>';

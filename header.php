@@ -50,6 +50,8 @@
     <link rel="apple-touch-icon" sizes="152x152" href="<?php echo $asset_dir.$act_id.'/152.png' ?>">  
     <link rel="apple-touch-icon" sizes="167x167" href="<?php echo $asset_dir.$act_id.'/167.png' ?>">  
     <?php wp_head();?>
+
+
 </head>
 <body <?php body_class('style-'.$act_id ); ?> >
 

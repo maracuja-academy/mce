@@ -30,7 +30,10 @@
             width: 200px
             height: 142px
             display: block
-            margin: 0 auto 
+            margin: 0 auto 20px auto 
+            top: 20px
+            position: relative
+            
         .services
             background : blue
             width : 100%
@@ -38,6 +41,8 @@
             padding: 2px 0;
             color: white
             display:block
+            position: fixed;
+            z-index: 1000;
         
     #bg-sky
         retina('equitation/bg-noel','png')
@@ -45,6 +50,7 @@
         background-position: bottom;
         background-repeat: no-repeat; 
         position: relative;
+        
     .bg-sky
         linear_gradient(top, #93ecf5 , #50C6DB) 
 
@@ -135,15 +141,14 @@
             
         
         .blockquote
-            margin : 15px auto 0 auto
+            margin : 35px auto 0 auto
             max-width : 100%
             text-align: center
             
             p
-                font-size: 18px
                 padding : 0 40px
-                font-family: Montserrat
                 line-height : 22px
+                
             img
                 overflow:hidden
                 border-radius(35px)
@@ -161,6 +166,7 @@
                     max-height: 180px;
                     max-width: 100%;
             blockquote
+                display: inline-block;
                 &:before, p:before
                     content : ""
                     width : 30px;

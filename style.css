@@ -654,7 +654,9 @@ header#header .fb-container {
   width: 200px;
   height: 142px;
   display: block;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
+  top: 20px;
+  position: relative;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   #equitation-landing header .logo {
@@ -669,6 +671,8 @@ header#header .fb-container {
   padding: 2px 0;
   color: #fff;
   display: block;
+  position: fixed;
+  z-index: 1000;
 }
 #equitation-landing #bg-sky {
   background-image: url("images/equitation/bg-noel.png");
@@ -797,14 +801,12 @@ header#header .fb-container {
   text-align: center;
 }
 #equitation-landing #section-testimonial .blockquote {
-  margin: 15px auto 0 auto;
+  margin: 35px auto 0 auto;
   max-width: 100%;
   text-align: center;
 }
 #equitation-landing #section-testimonial .blockquote p {
-  font-size: 18px;
   padding: 0 40px;
-  font-family: Montserrat;
   line-height: 22px;
 }
 #equitation-landing #section-testimonial .blockquote img {
@@ -828,6 +830,9 @@ header#header .fb-container {
 #equitation-landing #section-testimonial .blockquote .video iframe {
   max-height: 180px;
   max-width: 100%;
+}
+#equitation-landing #section-testimonial .blockquote blockquote {
+  display: inline-block;
 }
 #equitation-landing #section-testimonial .blockquote blockquote:before,
 #equitation-landing #section-testimonial .blockquote blockquote p:before {
@@ -1455,8 +1460,31 @@ body.page-template-equit-command .vertical-container {
   border-radius: 0.5rem !important;
   margin-top: 1.25rem;
 }
+.single-product .woocommerce-variation-description {
+  color: #2d62a8;
+  font-weight: bold;
+}
 .single-product .form-other-levels {
   margin-top: 5px;
+  display: none;
+}
+.single-product .stock.out-of-stock,
+.single-product .woocommerce-variation-price,
+.single-product .onsale {
+  display: none;
+}
+.single-product ins {
+  text-decoration: none !important;
+}
+.single-product del {
+  opacity: 1 !important;
+  color: #000 !important;
+}
+.single-product del .woocommerce-Price-amount {
+  color: #000 !important;
+  font-size: 12px !important;
+}
+.cart_item .form-other-levels {
   display: none;
 }
 .woocommerce-page:not(.single-product) h3 {

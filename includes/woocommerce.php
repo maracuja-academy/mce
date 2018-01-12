@@ -38,3 +38,6 @@ function woocommerce_support() {
 remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
 // add_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_excerpt', 25 );
 
+//HIDE SKU
+
+add_filter( 'wc_product_sku_enabled', '__return_false' );

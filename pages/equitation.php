@@ -38,8 +38,8 @@ get_header('equit'); ?>
         <div class="container">
             <div class="row">
                 <div class="col-6">
-                    <h2 class="font-comics">Offre spéciale vacances !</h2>
-                    <h3>Jusqu'au 8 janvier, offrez à votre enfant une expérience unique pour cette nouvelle année !</h3>
+                    <h2 class="font-comics">Résolution 2018</h2>
+                    <h3>Offrez à votre enfant passionné d'équitation la joie d'apprendre en prenant du plaisir !</h3>
                 </div>
             </div>
             <div class="row">
@@ -52,6 +52,7 @@ get_header('equit'); ?>
                             Un magazine<br>tous les 2 mois<br>pour progresser<br>grâce à l’équitation !
                             <strong class="font-comics">1 AN • 23€</strong>
                             <span>au lieu de <del>27€</del></span>
+                            <span>jusqu'au 14 janvier</span>
                         </p>
                     </div>
                     <a href="/boutique/abonnement" class="button">Je m'abonne</a>
@@ -101,7 +102,7 @@ get_header('equit'); ?>
                 
                 <strong>Professeur des écoles à URT - Pyrénées Atlantiques<br> Psychologue de formation et auteur de <a href="http://bit.ly/2yYFsxu" target="_blank" >CHECKLIST mon enfant réussit à l’école </a></strong>
                 <blockquote >
-                    <p>Je découvre avec plaisir qu’un magazine de révision s’appuie enfin sur la passion des enfants!<br>
+                    <p><strong>Je découvre avec plaisir qu’un magazine de révision s’appuie enfin sur la passion des enfants !</strong><br>
                    
                    En classe, comme dans la vie, on apprend mieux dans la pédagogie de projet c’est-à-dire lorsque les apprentissages concernent entre autre nos passions, nos réalités et ont du sens.<br><br>
                     
@@ -195,11 +196,11 @@ get_header('equit'); ?>
 
             <div class="col-4">
                 <img src="<?php asset('equitation/gift-card.jpg') ?>" />
-                <h3>En cette période de Noël, offrez une expérience unique à vos proches !</h3>
+                <h3>Pour cette nouvelle année, offrez une expérience unique à votre enfant !</h3>
             </div>
             <div class="col-4">
                 <p>L’ enfant à qui vous offrez cet abonnement recevra 6 magazines “Mon cahier d’entrainement” pendant 1 an. Il recevra également une jolie carte cadeau avec votre message lors de la réception du 1er numéro.</p>
-                <h3 class="font-comics">Offre spéciale Noël : 1 an 23€ </h3>
+                <h3 class="font-comics">Offre spéciale : 1 an 23€ </h3>
                 <p class="promo">au lieu de <del>27€</del></p>
                 <a href="/boutique/abonnement" class="button">S'abonner</a>
             </div>
@@ -224,13 +225,14 @@ get_header('equit'); ?>
                     <h3>Prochain stages : </h3>
                     <ul>
                         <li>
-                            <p><a href="https://www.facebook.com/ecuriesduvaldetursan" title="Les Écuries du Val de Tursan">Les Écuries du Val de Tursan</a> Landira (33)</strong><br>
-                            Jeudi 4 Janvier 2018 - CM1-CM2-6e</p>
-                        </li>
-                        <li>
                             <p><a href="https://www.facebook.com/poneyclubdelavoile" title="Poney Club de La Voile ">Poney Club de La Voile </a> Cabanac-Et-Villagrains (33)</strong><br>
                             Mercredi 27 décembre - CM1-CM2-6 </p>
                         </li>
+                        <li>
+                            <p><a href="https://www.facebook.com/ecuriesduvaldetursan" title="Les Écuries du Val de Tursan">Les Écuries du Val de Tursan</a> Landiras (33)</strong><br>
+                            Jeudi 4 Janvier 2018 - CM1-CM2-6e</p>
+                        </li>
+                        
                     </ul>
                     <p><strong>Vous êtes intéressé par ces stages pour votre centre équestre ou celui de votre enfant, <a href="#section-contact">contactez-nous</a>. </strong></p>
                 </div>
@@ -248,7 +250,7 @@ get_header('equit'); ?>
             <div class="col-4">
                 <h2>Une question ? Ecrivez-nous.</h2>
                 <p>Vous avez une question, des conseils, critiques, idées à nous proposer, c’est par ici :</p>
-                <?php Ninja_Forms()->display( 3 ); ?>
+                <?php Ninja_Forms()->display( 22 ); ?>
      
             </div>
             <div class="col-4"></div>
