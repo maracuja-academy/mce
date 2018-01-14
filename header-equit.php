@@ -64,7 +64,7 @@
     <canvas id="canvas"></canvas>
     <header>
         
-        <a href="/boutique/abonnement" class="services">  Offre spéciale : 23€ l'abonnement jusqu'au 14 janvier ! </a>
+        <a href="/boutique/abonnement" class="services"> Livraison gratuite avec l'abonnement • Paiements sécurisés </a>
         <a href="<?php echo site_url() ?>" class="logo"></a>
     </header>
 	<!-- <pre> -->

@@ -39,7 +39,7 @@ get_header('equit'); ?>
             <div class="row">
                 <div class="col-6">
                     <h2 class="font-comics">Résolution 2018</h2>
-                    <h3>Offrez à votre enfant passionné d'équitation la joie d'apprendre en prenant du plaisir !</h3>
+                    <h3>Pour cette nouvelle année, offrez à votre enfant l'experience d'apprendre en prenant du plaisir !</h3>
                 </div>
             </div>
             <div class="row">
@@ -50,9 +50,8 @@ get_header('equit'); ?>
                     <div class=" vertical-container">
                         <p class="box">
                             Un magazine<br>tous les 2 mois<br>pour progresser<br>grâce à l’équitation !
-                            <strong class="font-comics">1 AN • 23€</strong>
-                            <span>au lieu de <del>27€</del></span>
-                            <span>jusqu'au 14 janvier</span>
+                            <strong class="font-comics">1 AN • 27€</strong>
+                         
                         </p>
                     </div>
                     <a href="/boutique/abonnement" class="button">Je m'abonne</a>
@@ -200,8 +199,8 @@ get_header('equit'); ?>
             </div>
             <div class="col-4">
                 <p>L’ enfant à qui vous offrez cet abonnement recevra 6 magazines “Mon cahier d’entrainement” pendant 1 an. Il recevra également une jolie carte cadeau avec votre message lors de la réception du 1er numéro.</p>
-                <h3 class="font-comics">Offre spéciale : 1 an 23€ </h3>
-                <p class="promo">au lieu de <del>27€</del></p>
+                <h3 class="font-comics">Offre spéciale : 1 an 27€ </h3>
+                <br>
                 <a href="/boutique/abonnement" class="button">S'abonner</a>
             </div>
             <div class="col-4 sell-alone">
