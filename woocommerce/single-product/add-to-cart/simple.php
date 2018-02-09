@@ -74,9 +74,10 @@ if ( $product->is_in_stock() ) : ?>
 			do_action( 'woocommerce_after_add_to_cart_button' );
 		?>
 	</form>
-	<script > jQuery(document).ready(function(){
+	<!-- <script > jQuery(document).ready(function(){
+		console.log("OK")
 		    app.chooseLevel()}) </script>
-
+ -->
 	<?php do_action( 'woocommerce_after_add_to_cart_form' ); 
 	?>
 

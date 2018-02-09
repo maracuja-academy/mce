@@ -270,13 +270,17 @@ input[type=button] {
 #content .level1,
 #content .level2,
 #content .level3,
-#content .level0 {
+#content .level0,
+#content .level1-ce,
+#content .level2-ce {
   margin: 1.875rem 0 0.625rem 0;
 }
 #content .level1 strong,
 #content .level2 strong,
 #content .level3 strong,
-#content .level0 strong {
+#content .level0 strong,
+#content .level1-ce strong,
+#content .level2-ce strong {
   background-color: #477abd;
   -moz-box-shadow: -2px 2px 0 #2d62a8 !important;
   -webkit-box-shadow: -2px 2px 0 #2d62a8 !important;
@@ -297,12 +301,18 @@ input[type=button] {
 #content .level1:after,
 #content .level2:after,
 #content .level3:after,
-#content .level0:after {
+#content .level0:after,
+#content .level1-ce:after,
+#content .level2-ce:after {
   width: 74px;
   height: 22px;
   content: "";
   display: inline-block;
   background-repeat: no-repeat;
+}
+#content .level1-ce:after,
+#content .level2-ce:after {
+  width: 48px;
 }
 #content blockquote {
   padding: 0 0 0 0.625rem;
@@ -1415,6 +1425,9 @@ body.page-template-equit-command .vertical-container {
 #section-commande .nf-response-msg {
   color: #29b24b;
 }
+.sku_wrapper {
+  display: none;
+}
 .single-product .summary {
   text-align: left;
   margin-top: 3.75rem;
@@ -1470,9 +1483,6 @@ body.page-template-equit-command .vertical-container {
 }
 .single-product .stock.out-of-stock,
 .single-product .woocommerce-variation-price,
-.single-product .onsale {
-  display: none;
-}
 .single-product ins {
   text-decoration: none !important;
 }
@@ -1485,6 +1495,9 @@ body.page-template-equit-command .vertical-container {
   font-size: 12px !important;
 }
 .cart_item .form-other-levels {
+  display: none;
+}
+.onsale {
   display: none;
 }
 .woocommerce-page:not(.single-product) h3 {
@@ -1732,6 +1745,12 @@ body.error404 .button {
 .style-equitation .level3:after {
   background-image: url("images/equitation/picto-level3.png");
 }
+.style-equitation .level1-ce:after {
+  background-image: url("images/equitation/picto-level1-ce.png");
+}
+.style-equitation .level2-ce:after {
+  background-image: url("images/equitation/picto-level2-ce.png");
+}
 .style-gym {
   background-color: #f2f4e7;
 }
@@ -1801,6 +1820,14 @@ body.error404 .button {
 .style-gym .nf-response-msg a {
   color: #7d287f !important;
 }
+body.cat-game .container {
+  max-width: 70vh !important;
+}
+@media screen and (max-width: 45em) {
+  body.cat-game .container {
+    width: 100%;
+  }
+}
 footer {
   background: #f2f4e7;
   color: #2c322d;
@@ -1858,3 +1885,4 @@ footer .made {
     text-align: center;
   }
 }
+/*# sourceMappingURL=style.css.map */

@@ -85,34 +85,9 @@ var app = {
 		}
 	},
 
-    chooseLevel : function(){
-        var formOtherLevels = jQuery(".form-other-levels")
-        var commandButton = jQuery("#add-to-cart")
-        jQuery(".single_variation_wrap").change(function(){
-            if(jQuery(".stock.out-of-stock").html() == "Rupture de stock"){
-                formOtherLevels.slideDown()
-                commandButton.hide()
-            }else{
-                formOtherLevels.hide()
-                commandButton.show()
-            }
-        }); 
-
-        // 
-        // jQuery('#level-radio input[type=radio]').on('change',function(){
-        //     if(jQuery(this).val() =="cycle-other"){
-        //         formOtherLevels.slideDown()
-        //         commandButton.hide()
-        //     }else{
-        //         formOtherLevels.hide()
-        //         commandButton.show()
-        //     }
-            
-        // });
-        
-    },
 
     command : function(){
+
         var giftCardDiv = jQuery("#gift-card-command")
         jQuery("#gift-card-checkbox").on('click', function(){
             if ( jQuery(this).is(':checked') )
@@ -120,7 +95,8 @@ var app = {
             else
                 giftCardDiv.hide();
         });
-    }
+    },
+
 
 
 }

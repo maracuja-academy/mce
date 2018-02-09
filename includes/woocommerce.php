@@ -5,7 +5,7 @@
 add_filter('woocommerce_add_to_cart_redirect', 'themeprefix_add_to_cart_redirect');
 function themeprefix_add_to_cart_redirect() {
     global $woocommerce;
-    $checkout_url = $woocommerce->cart->get_checkout_url();
+    $checkout_url = wc_get_checkout_url();
     return $checkout_url;
 }
 
@@ -40,4 +40,4 @@ remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_p
 
 //HIDE SKU
 
-add_filter( 'wc_product_sku_enabled', '__return_false' );
+// add_filter( 'wc_product_sku_enabled', '__return_false' );

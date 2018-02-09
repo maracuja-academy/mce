@@ -22,7 +22,7 @@ get_header('equit'); ?>
                 <h2>Parce qu’apprendre devrait toujours être passionnant ! </h2>
             </div>
             <div class="row video">
-                <iframe width="960" height="540" src="https://www.youtube.com/embed/yT3mFdK7_DQ?showinfo=0&modestbranding=1&rel=0 " modestbranding=1 frameborder="0" showinfo=0 gesture="media"  allow="encrypted-media"  allowfullscreen></iframe>
+                <iframe width="960" height="540" src="https://www.youtube.com/embed/y-WXxi4cGz8?showinfo=0&modestbranding=1&rel=0 " modestbranding=1 frameborder="0" showinfo=0 gesture="media"  allow="encrypted-media"  allowfullscreen></iframe>
             </div>
 
             <div class="row">
@@ -39,7 +39,7 @@ get_header('equit'); ?>
             <div class="row">
                 <div class="col-6">
                     <h2 class="font-comics">Résolution 2018</h2>
-                    <h3>Pour cette nouvelle année, offrez à votre enfant l'experience d'apprendre en prenant du plaisir !</h3>
+                    <h3>Pour cette nouvelle année, offrez à votre enfant l'expérience d'apprendre en prenant du plaisir !</h3>
                 </div>
             </div>
             <div class="row">
@@ -51,7 +51,7 @@ get_header('equit'); ?>
                         <p class="box">
                             Un magazine<br>tous les 2 mois<br>pour progresser<br>grâce à l’équitation !
                             <strong class="font-comics">1 AN • 27€</strong>
-                         
+                            <span>au lieu de <del>31,20€</del></span>
                         </p>
                     </div>
                     <a href="/boutique/abonnement" class="button">Je m'abonne</a>
@@ -195,19 +195,20 @@ get_header('equit'); ?>
 
             <div class="col-4">
                 <img src="<?php asset('equitation/gift-card.jpg') ?>" />
-                <h3>Pour cette nouvelle année, offrez une expérience unique à votre enfant !</h3>
+                <h3>Pour cette nouvelle année, offrez à votre enfant l'expérience d'apprendre en prenant du plaisir !</h3>
             </div>
             <div class="col-4">
                 <p>L’ enfant à qui vous offrez cet abonnement recevra 6 magazines “Mon cahier d’entrainement” pendant 1 an. Il recevra également une jolie carte cadeau avec votre message lors de la réception du 1er numéro.</p>
-                <h3 class="font-comics">Offre spéciale : 1 an 27€ </h3>
-                <br>
+                <h3 class="font-comics">1 an : 27€ </h3>
+                <p class="promo">au lieu de <del>31,20€</del></p>
+                
                 <a href="/boutique/abonnement" class="button">S'abonner</a>
             </div>
             <div class="col-4 sell-alone">
                  <img src="<?php asset('equitation/couv-automne-unite.jpg') ?>" />
                  <div>
                      <h3>Commander le magazine à l’unité</h3>
-                     <p>4,50€</p>
+                     <p>5,20€</p>
                      <a class="button2" href="/boutique">Choisir</a>
                  </div>
             </div>
